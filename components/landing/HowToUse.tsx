@@ -1,20 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { usageSteps } from "@/data/features";
-import { Utensils, GlassWater, Clock } from "lucide-react";
 
 export const HowToUse: React.FC = () => {
-  const getIcon = (type: string) => {
-    switch (type) {
-      case "spoon":
-        return <Utensils strokeWidth={1.8} />;
-      case "cup":
-        return <GlassWater strokeWidth={1.8} />;
-      default:
-        return <Clock strokeWidth={1.8} />;
-    }
-  };
-
   return (
     <section className="bg-[#FFF9FB] border-b border-[#F3BFD2]/40 py-10 sm:py-14 md:py-20 lg:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +11,7 @@ export const HowToUse: React.FC = () => {
         <div className="text-center mb-8 sm:mb-12">
           <SectionHeading
             badge="उपयोग विधि"
-            title="गर्भ अमृत का सेवन कैसे करें?"
+            title="कैसे करें सेवन ?"
             subtitle="सरल और स्वाभाविक 3 चरण, जिसे आप अपनी दैनिक दिनचर्या में आसानी से शामिल कर सकती हैं।"
           />
         </div>
@@ -37,8 +26,8 @@ export const HowToUse: React.FC = () => {
                 w-full
                 min-h-[160px]
                 sm:min-h-[180px]
-                md:min-h-[340px]
-                lg:min-h-[380px]
+                md:min-h-[350px]
+                lg:min-h-[390px]
                 bg-white
                 border-2
                 border-[#F3BFD2]
@@ -59,6 +48,7 @@ export const HowToUse: React.FC = () => {
                 hover:border-[#E83D82]/50
                 transition-all
                 duration-300
+                group
               "
             >
               {/* ================= NUMBER ================= */}
@@ -89,7 +79,7 @@ export const HowToUse: React.FC = () => {
                 {String(step.step).padStart(2, "0")}
               </div>
 
-              {/* ================= ICON ================= */}
+              {/* ================= CUSTOM UPLOADED IMAGE ================= */}
               <div
                 className="
                   shrink-0
@@ -108,17 +98,22 @@ export const HowToUse: React.FC = () => {
                   flex
                   items-center
                   justify-center
-                  text-[#E83D82]
-                  [&>svg]:w-9
-                  [&>svg]:h-9
-                  sm:[&>svg]:w-11
-                  sm:[&>svg]:h-11
-                  md:[&>svg]:w-14
-                  md:[&>svg]:h-14
+                  p-2
                   shadow-inner
+                  overflow-hidden
+                  relative
+                  group-hover:scale-105
+                  transition-transform
+                  duration-300
                 "
               >
-                {getIcon(step.icon)}
+                <Image
+                  src={step.image}
+                  alt={step.alt}
+                  fill
+                  sizes="(max-width: 768px) 112px, 144px"
+                  className="object-contain p-1"
+                />
               </div>
 
               {/* ================= CONTENT ================= */}
