@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lotus Flower Botanical SVG -->
+  <g fill="#E83D82" opacity="0.18">
+    <path d="M100 20 C85 60, 50 80, 100 120 C150 80, 115 60, 100 20 Z" />
+    <path d="M100 45 C75 75, 40 95, 80 135 C120 115, 105 85, 100 45 Z" />
+    <path d="M100 45 C125 75, 160 95, 120 135 C80 115, 95 85, 100 45 Z" />
+    <circle cx="100" cy="115" r="14" fill="#C92F6C" opacity="0.3"/>
+  </g>
+</svg>
+

@@ -1,0 +1,62 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="jarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5" />
+      <stop offset="50%" stop-color="#FFE4ED" />
+      <stop offset="100%" stop-color="#FCD1DE" />
+    </linearGradient>
+    <linearGradient id="lidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C92F6C" />
+      <stop offset="100%" stop-color="#8E1747" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#B52C62" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="200" cy="200" r="160" fill="#FFF0F5" opacity="0.8" />
+  <circle cx="200" cy="200" r="130" stroke="#F3BFD2" stroke-width="1.5" stroke-dasharray="6 6" />
+
+  <!-- Botanical Leaves in BG -->
+  <path d="M70 120 C60 80, 110 70, 130 95 C115 115, 85 135, 70 120 Z" fill="#E8B4C8" opacity="0.6"/>
+  <path d="M330 280 C340 320, 290 330, 270 305 C285 285, 315 265, 330 280 Z" fill="#E8B4C8" opacity="0.6"/>
+
+  <!-- Jar Group -->
+  <g filter="url(#shadow)">
+    <!-- Main Jar Body -->
+    <rect x="120" y="140" width="160" height="200" rx="36" fill="url(#jarGrad)" stroke="#E83D82" stroke-width="3" />
+    
+    <!-- Jar Glass Shine -->
+    <path d="M140 160 Q150 240 145 310" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Jar Lid -->
+    <rect x="135" y="105" width="130" height="42" rx="14" fill="url(#lidGrad)" stroke="#FFE4ED" stroke-width="2" />
+    <line x1="145" y1="126" x2="255" y2="126" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+    <ellipse cx="200" cy="110" rx="55" ry="6" fill="#E83D82" opacity="0.6" />
+
+    <!-- Label Container -->
+    <rect x="135" y="175" width="130" height="130" rx="18" fill="#FFFFFF" />
+    <rect x="140" y="180" width="120" height="120" rx="14" fill="#FFF8FA" stroke="#F3BFD2" stroke-width="1" />
+
+    <!-- Lotus / Plant Icon on Label -->
+    <path d="M200 195 C190 208, 180 215, 200 225 C220 215, 210 208, 200 195 Z" fill="#E83D82" />
+    <path d="M185 208 C175 215, 178 222, 195 224 C190 215, 186 210, 185 208 Z" fill="#B52C62" opacity="0.8" />
+    <path d="M215 208 C225 215, 222 222, 205 224 C210 215, 214 210, 215 208 Z" fill="#B52C62" opacity="0.8" />
+
+    <!-- Label Text -->
+    <text x="200" y="246" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#B52C62">गर्भ अमृत™</text>
+    <text x="200" y="262" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#795968" letter-spacing="1">100% AYURVEDIC</text>
+    <text x="200" y="278" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#E83D82">NET WT. 200g</text>
+
+    <!-- Golden Seal/Badge -->
+    <circle cx="200" cy="292" r="6" fill="#F59E0B" />
+    <circle cx="200" cy="292" r="4.5" fill="#FDE68A" />
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M100 220 L105 225 L100 230 L95 225 Z" fill="#E83D82" opacity="0.7"/>
+  <path d="M300 160 L304 164 L300 168 L296 164 Z" fill="#E83D82" opacity="0.7"/>
+  <path d="M285 110 L289 113 L285 116 L281 113 Z" fill="#C92F6C" opacity="0.6"/>
+</svg>
+

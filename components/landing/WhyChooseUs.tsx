@@ -1,0 +1,54 @@
+import React from "react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { comparisonPoints } from "@/data/features";
+import { Check, X } from "lucide-react";
+
+export const WhyChooseUs: React.FC = () => {
+  return (
+    <section className="py-12 md:py-16 bg-[#FFF0F5]/50 border-b border-[#F3BFD2]/40">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <SectionHeading
+          badge="तुलना एवं श्रेष्ठता"
+          title="अन्य विकल्पों की तुलना में गर्भ अमृत क्यों?"
+          subtitle="समझिए कि क्यों आयुर्वेदिक गर्भ अमृत आपके मातृत्व के सफर का सबसे भरोसेमंद साथी है।"
+        />
+
+        <div className="bg-white border border-[#F3BFD2] rounded-3xl overflow-hidden shadow-xs">
+          {/* Table Header */}
+          <div className="grid grid-cols-12 bg-[#FFF0F5] border-b border-[#F3BFD2] p-4 text-xs sm:text-sm font-bold text-[#4A2635]">
+            <div className="col-span-5 sm:col-span-4">विशेषता / मानक</div>
+            <div className="col-span-4 sm:col-span-4 text-[#B52C62] flex items-center gap-1 font-extrabold">
+              गर्भ अमृत™
+            </div>
+            <div className="col-span-3 sm:col-span-4 text-[#795968]">
+              अन्य सामान्य उत्पाद
+            </div>
+          </div>
+
+          {/* Table Rows */}
+          <div className="divide-y divide-[#FFF0F5]">
+            {comparisonPoints.map((item, idx) => (
+              <div
+                key={idx}
+                className="grid grid-cols-12 p-4 text-xs sm:text-sm items-center hover:bg-[#FFF8FA] transition-colors"
+              >
+                <div className="col-span-5 sm:col-span-4 font-semibold text-[#4A2635] pr-2">
+                  {item.title}
+                </div>
+                <div className="col-span-4 sm:col-span-4 text-[#B52C62] font-medium flex items-start gap-1.5 pr-2">
+                  <Check className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
+                  <span>{item.us}</span>
+                </div>
+                <div className="col-span-3 sm:col-span-4 text-[#795968] flex items-start gap-1.5">
+                  <X className="w-4 h-4 text-[#EF4444] shrink-0 mt-0.5" />
+                  <span>{item.others}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
