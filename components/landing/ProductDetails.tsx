@@ -18,12 +18,12 @@ export const ProductDetails: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left: Product Pack Image & Price */}
             <div className="lg:col-span-5 flex flex-col items-center text-center border-b lg:border-b-0 lg:border-r border-[#FFF0F5] pb-6 lg:pb-0 lg:pr-6">
-              <div className="relative w-52 h-52 sm:w-64 sm:h-64 mb-4">
+              <div className="relative w-56 h-56 sm:w-64 sm:h-64 mb-4 rounded-2xl overflow-hidden shadow-md border border-[#F3BFD2]">
                 <Image
-                  src="/product/product-jar.svg"
+                  src="/hero/desktop-hero-jar.jpg"
                   alt={product.name}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
 

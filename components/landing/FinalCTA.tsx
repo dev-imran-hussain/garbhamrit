@@ -38,7 +38,7 @@ export const FinalCTA: React.FC = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <CTAButton
-            label="कॉल करें (CALL NOW)"
+            label="CALL NOW"
             sublabel="तुरंत नि:शुल्क परामर्श पाएं"
             size="lg"
             className="w-full sm:w-auto shadow-xl"

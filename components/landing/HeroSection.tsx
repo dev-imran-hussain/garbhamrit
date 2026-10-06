@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/product";
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-[#FFF8FA] border-b border-[#F3BFD2]/40">
-      {/* Mobile-first Layout: Exact 1:1 match with reference banner image */}
+      {/* Mobile-first Layout: Exact match with full mobile banner graphic */}
       <div className="block md:hidden">
         {/* Banner Graphic Container */}
         <div className="relative w-full aspect-[695/1024]">
@@ -30,7 +30,7 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Desktop Layout: Split view preserving high-res visual and responsive layout */}
+      {/* Desktop Layout: Features the high-res square Jar product photography */}
       <div className="hidden md:block max-w-6xl mx-auto px-6 py-12 lg:py-16">
         <div className="grid grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left: Text, Bullets, and Call to Actions */}
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
               परंपरागत जड़ी-बूटियों से तैयार प्राकृतिक सपोर्ट पाउडर
             </div>
 
-            {/* Bullets matching banner badges */}
+            {/* Bullets matching product highlights */}
             <div className="space-y-3.5 mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center text-[#E83D82] text-lg shrink-0">
@@ -68,6 +68,15 @@ export const HeroSection: React.FC = () => {
                 </div>
                 <span className="text-base font-semibold text-[#4A2635]">
                   23 चयनित हर्ब्स एवं आयुर्वेदिक सामग्री
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center text-[#E83D82] text-lg shrink-0">
+                  ✨
+                </div>
+                <span className="text-base font-semibold text-[#4A2635]">
+                  प्रजनन क्षमता में सुधार • गर्भाशय पोषण • हार्मोनल संतुलन
                 </span>
               </div>
             </div>
@@ -90,17 +99,22 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: The Complete Reference Graphic Card */}
+          {/* Right: The High-Res Product Jar Photo requested for Desktop */}
           <div className="col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[380px] aspect-[695/1024] rounded-3xl overflow-hidden shadow-2xl border-2 border-[#F3BFD2]/80 bg-white">
+            <div className="relative w-full max-w-[440px] aspect-square rounded-3xl overflow-hidden shadow-2xl border-2 border-[#F3BFD2] bg-white group hover:scale-[1.01] transition-transform">
               <Image
-                src="/hero/hero-banner.jpg"
-                alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
+                src="/hero/desktop-hero-jar.jpg"
+                alt="गर्भ अमृत™ - फर्टिलिटी सपोर्ट पाउडर"
                 fill
                 priority
-                sizes="(max-width: 1024px) 380px, 450px"
-                className="object-cover object-top"
+                sizes="(max-width: 1024px) 400px, 460px"
+                className="object-cover"
               />
+              {/* Subtle aesthetic soft badge */}
+              <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-[#F3BFD2] flex items-center justify-between text-xs font-semibold text-[#4A2635] shadow-md">
+                <span className="text-[#B52C62] font-bold">100% प्राकृतिक | सुरक्षित | प्रभावी</span>
+                <span className="text-[#795968]">200 gm पैक</span>
+              </div>
             </div>
           </div>
         </div>

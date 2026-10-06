@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/product";
 
 export const TopCallBar: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#E83D82] text-white shadow-sm">
+    <header className="sticky top-0 z-75 w-full bg-[#E83D82] text-white shadow-sm">
       <a
         href={`tel:${siteConfig.phone}`}
         className="

@@ -30,7 +30,7 @@ export const StickyMobileCTA: React.FC = () => {
         className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#E83D82] text-white font-bold text-sm shadow-md active:scale-95 transition-transform"
       >
         <Phone className="w-4 h-4 animate-pulse" />
-        <span>कॉल करें (Call Now)</span>
+        <span>Call Now</span>
       </a>
 
       <a
