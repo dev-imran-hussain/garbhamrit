@@ -7,44 +7,44 @@ export const ProductIntro: React.FC = () => {
     {
       icon: Leaf,
       title: "प्राकृतिक सामग्री",
-      desc: "शतावरी, अशोक और लोध्र जैसी 23 प्रामाणिक वनस्पतियों का संतुलन।",
+      desc: "शतावरी, अशोक और लोध्र जैसी 23 प्रामाणिक वनस्पतियों का संपूर्ण संतुलन।",
     },
     {
       icon: ShieldCheck,
       title: "हर्बल फॉर्मूलेशन",
-      desc: "प्राचीन चरक संहिता और सुश्रुत संहिता के सिद्धांतों पर आधारित।",
+      desc: "प्राचीन चरक संहिता और सुश्रुत संहिता के दिव्य आयुर्वेदिक सिद्धांतों पर आधारित।",
     },
     {
       icon: HeartPulse,
       title: "आसान सेवन एवं पोषण",
-      desc: "गुनगुने दूध या पानी के साथ सुगमता से पचने वाला और ऊर्जा प्रदाता।",
+      desc: "गुनगुने दूध या पानी के साथ सुगमता से पचने वाला और त्वरित ऊर्जा प्रदाता।",
     },
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-white border-b border-[#F3BFD2]/30">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="परिचय"
           title="गर्भ अमृत क्या है?"
           subtitle="गर्भ अमृत महिलाओं के संपूर्ण प्रजनन स्वास्थ्य, गर्भाशय को प्राकृतिक मजबूती और मातृत्व की सुखद यात्रा के लिए तैयार किया गया एक अद्वितीय आयुर्वेदिक पूरक है।"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {cards.map((card, index) => {
             const Icon = card.icon;
             return (
               <div
                 key={index}
-                className="bg-[#FFF8FA] border border-[#F3BFD2] rounded-2xl p-6 text-center hover:bg-[#FFF0F5] transition-colors"
+                className="bg-[#FFF8FA] border border-[#F3BFD2] rounded-3xl p-6 sm:p-8 lg:p-10 text-center hover:bg-[#FFF0F5] hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-white border border-[#F3BFD2] flex items-center justify-center text-[#E83D82] shadow-xs">
-                  <Icon className="w-6 h-6" />
+                <div className="w-14 h-14 lg:w-18 lg:h-18 mx-auto mb-5 rounded-2xl bg-white border border-[#F3BFD2] flex items-center justify-center text-[#E83D82] shadow-sm">
+                  <Icon className="w-7 h-7 lg:w-9 lg:h-9" />
                 </div>
-                <h3 className="font-bold text-lg text-[#B52C62] mb-2">
+                <h3 className="font-extrabold text-xl lg:text-2xl text-[#B52C62] mb-3">
                   {card.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#795968] leading-relaxed">
+                <p className="text-sm sm:text-base lg:text-lg text-[#795968] leading-relaxed">
                   {card.desc}
                 </p>
               </div>
@@ -55,4 +55,3 @@ export const ProductIntro: React.FC = () => {
     </section>
   );
 };
-

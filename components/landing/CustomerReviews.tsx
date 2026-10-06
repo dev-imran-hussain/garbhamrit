@@ -6,8 +6,8 @@ import { CTAButton } from "@/components/ui/CTAButton";
 
 export const CustomerReviews: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 bg-white border-b border-[#F3BFD2]/30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <SectionHeading
           badge="ग्राहकों के अनुभव"
           title="माताओं और परिवारों का भरोसा"
@@ -15,7 +15,7 @@ export const CustomerReviews: React.FC = () => {
         />
 
         {/* 2-column on mobile/tablet, 4 on large screens */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
           {reviews.map((rev) => (
             <ReviewCard key={rev.id} review={rev} />
           ))}
@@ -24,7 +24,7 @@ export const CustomerReviews: React.FC = () => {
         <div className="text-center">
           <CTAButton
             label="विशेषज्ञ से परामर्श लें"
-            size="md"
+            size="lg"
             variant="outline"
           />
         </div>
@@ -32,4 +32,3 @@ export const CustomerReviews: React.FC = () => {
     </section>
   );
 };
-

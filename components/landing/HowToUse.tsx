@@ -16,253 +16,133 @@ export const HowToUse: React.FC = () => {
   };
 
   return (
-    <section
-      className="
-        bg-[#FFF9FB]
-        border-b border-[#F3BFD2]/40
-        py-7
-        sm:py-10
-        md:py-14
-      "
-    >
-      <div
-        className="
-          max-w-[900px]
-          mx-auto
-          px-4
-          sm:px-6
-        "
-      >
-
+    <section className="bg-[#FFF9FB] border-b border-[#F3BFD2]/40 py-10 sm:py-14 md:py-20 lg:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER ================= */}
-        <div className="text-center mb-6 sm:mb-9">
-
+        <div className="text-center mb-8 sm:mb-12">
           <SectionHeading
             badge="उपयोग विधि"
             title="गर्भ अमृत का सेवन कैसे करें?"
             subtitle="सरल और स्वाभाविक 3 चरण, जिसे आप अपनी दैनिक दिनचर्या में आसानी से शामिल कर सकती हैं।"
           />
-
         </div>
 
-
         {/* ================= STEPS ================= */}
-        <div
-          className="
-            flex
-            flex-col
-            gap-3.5
-            sm:gap-5
-            md:grid
-            md:grid-cols-3
-            md:gap-5
-          "
-        >
-
+        <div className="flex flex-col gap-4 sm:gap-6 md:grid md:grid-cols-3 md:gap-6 lg:gap-8">
           {usageSteps.map((step) => (
             <div
               key={step.step}
               className="
                 relative
-
                 w-full
-
-                min-h-[158px]
-                sm:min-h-[170px]
-                md:min-h-[300px]
-
+                min-h-[160px]
+                sm:min-h-[180px]
+                md:min-h-[340px]
+                lg:min-h-[380px]
                 bg-white
-
-                border
+                border-2
                 border-[#F3BFD2]
-
-                rounded-[20px]
-                sm:rounded-[22px]
-
-                px-3.5
-                py-4
-
-                sm:px-5
-                sm:py-5
-
-                md:px-6
-                md:py-7
-
+                rounded-3xl
+                px-5
+                py-5
+                md:px-7
+                md:py-9
                 flex
                 flex-row
                 md:flex-col
-
                 items-center
-                md:items-center
-
-                gap-3.5
-                sm:gap-5
-                md:gap-4
-
-                shadow-[0_2px_10px_rgba(232,61,130,0.04)]
+                gap-4
+                sm:gap-6
+                md:gap-5
+                shadow-sm
+                hover:shadow-xl
+                hover:border-[#E83D82]/50
+                transition-all
+                duration-300
               "
             >
-
               {/* ================= NUMBER ================= */}
               <div
                 className="
                   absolute
                   z-10
-
-                  left-[10px]
-                  top-[10px]
-
-                  sm:left-3
-                  sm:top-3
-
-                  w-[37px]
-                  h-[37px]
-
-                  sm:w-[40px]
-                  sm:h-[40px]
-
+                  left-3
+                  top-3
+                  md:left-4
+                  md:top-4
+                  w-10
+                  h-10
+                  md:w-12
+                  md:h-12
                   rounded-full
-
-                  bg-[#EC3C7E]
+                  bg-[#E83D82]
                   text-white
-
                   flex
                   items-center
                   justify-center
-
-                  text-[16px]
-                  sm:text-[17px]
-
-                  font-extrabold
-
-                  shadow-[0_3px_8px_rgba(232,61,130,0.18)]
+                  text-base
+                  md:text-lg
+                  font-black
+                  shadow-md
                 "
               >
                 {String(step.step).padStart(2, "0")}
               </div>
 
-
               {/* ================= ICON ================= */}
               <div
                 className="
                   shrink-0
-
-                  w-[101px]
-                  h-[101px]
-
-                  sm:w-[112px]
-                  sm:h-[112px]
-
-                  md:w-[125px]
-                  md:h-[125px]
-
+                  w-24
+                  h-24
+                  sm:w-28
+                  sm:h-28
+                  md:w-32
+                  md:h-32
+                  lg:w-36
+                  lg:h-36
                   rounded-full
-
                   bg-[#FFF0F5]
-
-                  border
+                  border-2
                   border-[#F5C6D8]
-
                   flex
                   items-center
                   justify-center
-
                   text-[#E83D82]
-
-                  [&>svg]:w-[35px]
-                  [&>svg]:h-[35px]
-
-                  sm:[&>svg]:w-[39px]
-                  sm:[&>svg]:h-[39px]
-
-                  md:[&>svg]:w-[42px]
-                  md:[&>svg]:h-[42px]
+                  [&>svg]:w-9
+                  [&>svg]:h-9
+                  sm:[&>svg]:w-11
+                  sm:[&>svg]:h-11
+                  md:[&>svg]:w-14
+                  md:[&>svg]:h-14
+                  shadow-inner
                 "
               >
                 {getIcon(step.icon)}
               </div>
 
-
               {/* ================= CONTENT ================= */}
-              <div
-                className="
-                  flex-1
-                  min-w-0
-
-                  text-left
-
-                  md:text-center
-                "
-              >
-
+              <div className="flex-1 min-w-0 text-left md:text-center">
                 {/* TITLE */}
-                <h3
-                  className="
-                    text-[#10294A]
-
-                    font-extrabold
-
-                    text-[19px]
-                    leading-[1.25]
-
-                    sm:text-[21px]
-
-                    md:text-xl
-
-                    mb-1.5
-                  "
-                >
+                <h3 className="text-[#10294A] font-extrabold text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2">
                   {step.title}
                 </h3>
 
-
                 {/* DESCRIPTION */}
-                <p
-                  className="
-                    text-[#596579]
-
-                    font-medium
-
-                    text-[14px]
-                    leading-[1.45]
-
-                    sm:text-[15px]
-                    sm:leading-[1.5]
-
-                    md:text-sm
-
-                    mb-1.5
-                  "
-                >
+                <p className="text-[#596579] font-medium text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-2">
                   {step.description}
                 </p>
 
-
                 {/* SUBTITLE */}
                 {step.subtitle && (
-                  <p
-                    className="
-                      text-[#E83D82]
-
-                      font-bold
-
-                      text-[13px]
-                      leading-[1.35]
-
-                      sm:text-sm
-                    "
-                  >
+                  <p className="text-[#E83D82] font-bold text-xs sm:text-sm md:text-base">
                     {step.subtitle}
                   </p>
                 )}
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

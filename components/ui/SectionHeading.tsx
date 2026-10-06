@@ -19,22 +19,23 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
 
   return (
     <div
-      className={`mb-8 md:mb-12 ${isCenter ? "text-center mx-auto max-w-2xl" : "text-left"} ${className}`}
+      className={`mb-8 md:mb-14 lg:mb-16 ${
+        isCenter ? "text-center mx-auto max-w-3xl lg:max-w-4xl" : "text-left"
+      } ${className}`}
     >
       {badge && (
-        <span className="inline-block px-3.5 py-1 mb-3 text-xs md:text-sm font-semibold tracking-wider text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full uppercase">
+        <span className="inline-block px-4 py-1.5 mb-3.5 text-xs sm:text-sm lg:text-base font-semibold tracking-wider text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full uppercase shadow-xs">
           {badge}
         </span>
       )}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B52C62] leading-tight mb-3">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#B52C62] leading-[1.2] mb-4">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-sm sm:text-base text-[#795968] leading-relaxed">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#795968] leading-relaxed">
           {subtitle}
         </p>
       )}
     </div>
   );
 };
-

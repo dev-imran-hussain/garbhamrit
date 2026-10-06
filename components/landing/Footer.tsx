@@ -4,30 +4,30 @@ import { Phone, Mail, Clock, MapPin, Heart } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#4A2635] text-[#FFE4ED] pt-12 pb-8 border-t-2 border-[#E83D82]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-[#795968]/40 text-xs sm:text-sm">
+    <footer className="bg-[#4A2635] text-[#FFE4ED] pt-16 lg:pt-20 pb-12 border-t-4 border-[#E83D82]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-[#795968]/40 text-sm sm:text-base">
           {/* Col 1: Brand & Bio */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-3 tracking-wide">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-4 tracking-wide">
               गर्भ अमृत™
             </h3>
-            <p className="text-[#FFE4ED]/80 leading-relaxed mb-4 text-xs">
+            <p className="text-[#FFE4ED]/80 leading-relaxed mb-6 text-sm lg:text-base">
               प्राचीन भारतीय आयुर्वेद और आधुनिक गुणवत्ता मानकों के साथ तैयार
               किया गया प्राकृतिक मातृत्व स्वास्थ्य पूरक।
             </p>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#B52C62]/40 rounded-full text-[11px] text-[#F3BFD2] border border-[#F3BFD2]/20">
-              <Heart className="w-3.5 h-3.5 text-[#E83D82]" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#B52C62]/50 rounded-full text-xs lg:text-sm text-[#F3BFD2] border border-[#F3BFD2]/30">
+              <Heart className="w-4 h-4 text-[#E83D82]" />
               <span>हजारों महिलाओं द्वारा प्रमाणित</span>
             </div>
           </div>
 
           {/* Col 2: Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-3 text-sm tracking-wider uppercase">
+            <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
               त्वरित लिंक (Quick Links)
             </h4>
-            <ul className="space-y-2 text-[#FFE4ED]/80">
+            <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
                 <a href="#hero" className="hover:text-white transition-colors">
                   मुख्य पृष्ठ (Home)
@@ -58,10 +58,10 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Legal & Trust */}
           <div>
-            <h4 className="font-semibold text-white mb-3 text-sm tracking-wider uppercase">
+            <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
               नीति एवं नियम (Legal)
             </h4>
-            <ul className="space-y-2 text-[#FFE4ED]/80">
+            <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
                   गोपनीयता नीति (Privacy Policy)
@@ -92,29 +92,29 @@ export const Footer: React.FC = () => {
 
           {/* Col 4: Customer Care */}
           <div>
-            <h4 className="font-semibold text-white mb-3 text-sm tracking-wider uppercase">
+            <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
               कस्टमर केयर (Contact Us)
             </h4>
-            <ul className="space-y-2.5 text-[#FFE4ED]/80">
-              <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 text-[#E83D82] shrink-0 mt-0.5" />
+            <ul className="space-y-3.5 text-[#FFE4ED]/85 text-sm lg:text-base">
+              <li className="flex items-start gap-2.5">
+                <Phone className="w-5 h-5 text-[#E83D82] shrink-0 mt-0.5" />
                 <a
                   href={`tel:${siteConfig.phone}`}
-                  className="hover:text-white font-medium"
+                  className="hover:text-white font-bold text-base lg:text-lg"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 text-[#E83D82] shrink-0 mt-0.5" />
+              <li className="flex items-start gap-2.5">
+                <Mail className="w-5 h-5 text-[#E83D82] shrink-0 mt-0.5" />
                 <span>{siteConfig.email}</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Clock className="w-4 h-4 text-[#E83D82] shrink-0 mt-0.5" />
+              <li className="flex items-start gap-2.5">
+                <Clock className="w-5 h-5 text-[#E83D82] shrink-0 mt-0.5" />
                 <span>{siteConfig.supportTiming}</span>
               </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#E83D82] shrink-0 mt-0.5" />
+              <li className="flex items-start gap-2.5">
+                <MapPin className="w-5 h-5 text-[#E83D82] shrink-0 mt-0.5" />
                 <span>{siteConfig.address}</span>
               </li>
             </ul>
@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Disclaimer Notice */}
-        <div className="py-5 text-[11px] text-[#FFE4ED]/60 leading-relaxed border-b border-[#795968]/30">
+        <div className="py-6 text-xs lg:text-sm text-[#FFE4ED]/60 leading-relaxed border-b border-[#795968]/30">
           <p>
             <strong>वैधानिक अस्वीकरण (Disclaimer):</strong> यह उत्पाद किसी भी
             रोग के निदान, उपचार या रोकथाम का दावा नहीं करता है। यह एक शास्त्रीय
@@ -133,7 +133,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#FFE4ED]/70 gap-2">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-[#FFE4ED]/70 gap-3">
           <p>© {new Date().getFullYear()} गर्भ अमृत™. सर्वाधिकार सुरक्षित।</p>
           <p>आयुर्वेदिक परंपरा • आधुनिक मानक</p>
         </div>
@@ -141,4 +141,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-

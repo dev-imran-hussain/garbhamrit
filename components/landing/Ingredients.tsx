@@ -5,8 +5,8 @@ import { ingredients } from "@/data/ingredients";
 
 export const Ingredients: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 bg-white border-b border-[#F3BFD2]/30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <SectionHeading
           badge="प्राकृतिक जड़ी-बूटियां"
           title="मुख्य दिव्य घटक (Main Ingredients)"
@@ -14,17 +14,16 @@ export const Ingredients: React.FC = () => {
         />
 
         {/* 2 columns mobile, 3 tablet, 4 desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-7 lg:gap-8">
           {ingredients.map((ing) => (
             <IngredientCard key={ing.id} ingredient={ing} />
           ))}
         </div>
 
-        <div className="mt-8 text-center bg-[#FFF8FA] border border-[#F3BFD2] rounded-2xl p-4 max-w-xl mx-auto text-xs text-[#795968]">
+        <div className="mt-10 text-center bg-[#FFF8FA] border-2 border-[#F3BFD2] rounded-3xl p-5 sm:p-6 max-w-2xl mx-auto text-sm lg:text-base font-semibold text-[#795968] shadow-sm">
           ✨ इनके अलावा अन्य 15+ सूक्ष्म पोषक आयुर्वेदिक घटक भी शामिल हैं।
         </div>
       </div>
     </section>
   );
 };
-
