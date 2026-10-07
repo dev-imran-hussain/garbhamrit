@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { usageSteps } from "@/data/features";
+import { getOptimizedImage } from "@/lib/images";
 
 export const HowToUse: React.FC = () => {
   return (
@@ -108,7 +109,7 @@ export const HowToUse: React.FC = () => {
                 "
               >
                 <Image
-                  src={step.image}
+                  src={getOptimizedImage(step.image, { width: 300 })}
                   alt={step.alt}
                   fill
                   sizes="(max-width: 768px) 112px, 144px"

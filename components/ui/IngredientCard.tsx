@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Ingredient } from "@/types/landing";
+import { getOptimizedImage } from "@/lib/images";
 
 export const IngredientCard: React.FC<{ ingredient: Ingredient }> = ({
   ingredient,
@@ -9,7 +10,7 @@ export const IngredientCard: React.FC<{ ingredient: Ingredient }> = ({
     <div className="bg-white border-2 border-[#F3BFD2] rounded-3xl p-5 lg:p-7 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:border-[#E83D82]/60 transition-all duration-300 group">
       <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mb-4 rounded-full overflow-hidden bg-[#FFF0F5] border-2 border-[#F3BFD2] flex items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300 shadow-inner">
         <Image
-          src={ingredient.image}
+          src={getOptimizedImage(ingredient.image, { width: 360 })}
           alt={ingredient.name}
           fill
           sizes="(max-width: 640px) 112px, (max-width: 1024px) 128px, 144px"

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Star, CheckCircle2 } from "lucide-react";
 import { Review } from "@/types/landing";
+import { getOptimizedImage } from "@/lib/images";
 
 export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
   return (
@@ -11,7 +12,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
         <div className="flex items-center gap-4 mb-4">
           <div className="relative w-14 h-14 lg:w-16 lg:h-16 rounded-full overflow-hidden border-2 border-[#F3BFD2] bg-[#FFF0F5] shrink-0">
             <Image
-              src={review.image}
+              src={getOptimizedImage(review.image, { width: 120 })}
               alt={review.name}
               fill
               sizes="64px"

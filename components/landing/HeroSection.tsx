@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { siteConfig } from "@/data/product";
+import { getOptimizedImage } from "@/lib/images";
 
 export const HeroSection: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const HeroSection: React.FC = () => {
         {/* Banner Graphic Container */}
         <div className="relative w-full aspect-[695/1024]">
           <Image
-            src="/hero/hero-banner.jpg"
+            src={getOptimizedImage("/hero/hero-banner.jpg", { width: 750 })}
             alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
             fill
             priority
@@ -103,7 +104,7 @@ export const HeroSection: React.FC = () => {
           <div className="col-span-5 flex justify-center">
             <div className="relative w-full max-w-[540px] aspect-square rounded-3xl overflow-hidden shadow-2xl border-2 border-[#F3BFD2] bg-white group hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src="/hero/desktop-hero-jar.jpg"
+                src={getOptimizedImage("/hero/desktop-hero-jar.jpg", { width: 1080 })}
                 alt="गर्भ अमृत™ - फर्टिलिटी सपोर्ट पाउडर"
                 fill
                 priority

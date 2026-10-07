@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { siteConfig } from "@/data/product";
 import { Sparkles, ShieldCheck } from "lucide-react";
+import { getOptimizedImage } from "@/lib/images";
 
 export const FinalCTA: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const FinalCTA: React.FC = () => {
       {/* Decorative BG element */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] opacity-15 pointer-events-none">
         <Image
-          src="/decorative/flower-bg.svg"
+          src={getOptimizedImage("/decorative/flower-bg.svg")}
           alt=""
           fill
           className="object-contain"

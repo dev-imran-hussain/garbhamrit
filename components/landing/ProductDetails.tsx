@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { product } from "@/data/product";
 import { CheckCircle } from "lucide-react";
+import { getOptimizedImage } from "@/lib/images";
 
 export const ProductDetails: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const ProductDetails: React.FC = () => {
             <div className="lg:col-span-5 flex flex-col items-center text-center border-b lg:border-b-0 lg:border-r-2 border-[#FFF0F5] pb-8 lg:pb-0 lg:pr-8">
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mb-5 rounded-3xl overflow-hidden shadow-xl border-2 border-[#F3BFD2]">
                 <Image
-                  src="/hero/desktop-hero-jar.jpg"
+                  src={getOptimizedImage("/hero/desktop-hero-jar.jpg", { width: 800 })}
                   alt={product.name}
                   fill
                   className="object-cover"

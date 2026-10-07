@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Quote, Sparkles } from "lucide-react";
+import { getOptimizedImage } from "@/lib/images";
 
 export const SpecialApproach: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ export const SpecialApproach: React.FC = () => {
       {/* Decorative Flower - Top Right */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 opacity-[0.07] sm:h-96 sm:w-96 lg:-right-16 lg:-top-24 lg:h-[480px] lg:w-[480px]">
         <Image
-          src="/decorative/flower-bg.svg"
+          src={getOptimizedImage("/decorative/flower-bg.svg")}
           alt=""
           fill
           priority={false}
@@ -20,7 +21,7 @@ export const SpecialApproach: React.FC = () => {
       {/* Decorative Flower - Bottom Left */}
       <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rotate-180 opacity-[0.04] sm:h-80 sm:w-80">
         <Image
-          src="/decorative/flower-bg.svg"
+          src={getOptimizedImage("/decorative/flower-bg.svg")}
           alt=""
           fill
           className="object-contain"
