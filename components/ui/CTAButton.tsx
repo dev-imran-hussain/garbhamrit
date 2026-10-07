@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig } from "@/data/product";
 
 interface CTAButtonProps {
@@ -49,7 +50,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
           <Phone className="w-5 h-5 lg:w-6 lg:h-6 animate-pulse" />
         )}
         {icon === "whatsapp" && (
-          <MessageCircle className="w-5 h-5 lg:w-6 lg:h-6" />
+          <WhatsAppIcon className="w-5 h-5 lg:w-6 lg:h-6 shrink-0" />
         )}
         <span>{label}</span>
       </div>

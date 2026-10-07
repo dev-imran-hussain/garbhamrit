@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig } from "@/data/product";
 
 export const StickyMobileCTA: React.FC = () => {
@@ -36,9 +37,9 @@ export const StickyMobileCTA: React.FC = () => {
       <a
         href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20के%20बारे%20में%20जानकारी%20चाहिए`}
         aria-label="WhatsApp"
-        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] text-white shadow-md active:scale-95 transition-transform shrink-0"
+        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-md active:scale-95 transition-transform shrink-0"
       >
-        <MessageCircle className="w-6 h-6" />
+        <WhatsAppIcon className="w-6 h-6" />
       </a>
     </div>
   );
