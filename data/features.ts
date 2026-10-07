@@ -27,7 +27,7 @@ export const keyFeatures = [
     id: "kf-5",
     title: "200gm Large Packet",
     description: "विशेष एयरटाइट सुरक्षा जार में पैक ताकि शुद्धता और खुशबू बरकरार रहे।",
-    badge: "प्रीमियम पैक",
+    badge: "बड़ा पैक",
   },
   {
     id: "kf-6",
