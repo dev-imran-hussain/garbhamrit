@@ -13,7 +13,7 @@ Deploying this project to Vercel takes less than 1 minute:
 1. Push this repository to your GitHub account: `main` branch.
 2. Go to [vercel.com](https://vercel.com) and log in.
 3. Click **Add New...** -> **Project**.
-4. Import your GitHub repository (`pplandingpage`).
+4. Import your GitHub repository (`garbhamrit`).
 5. Keep default settings:
    - **Framework Preset**: Next.js
    - **Root Directory**: `./`

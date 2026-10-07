@@ -19,7 +19,7 @@ export interface ImageOptions {
  * Resolves an image source cleanly:
  * - If path is already http(s), returns as is
  * - If Cloudinary is configured AND publicId is specified, returns optimized Cloudinary CDN URL
- * - Otherwise prepends basePath (for GitHub Pages /pplandingpage) to local public/ path
+ * - Otherwise returns clean relative path for local assets
  */
 export function getOptimizedImage(
   localPathOrPublicId: string,
@@ -54,7 +54,6 @@ export function getOptimizedImage(
   }
 
   // Local static file in public folder:
-  // Must automatically respect GitHub Pages sub-path (e.g. /pplandingpage)
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const cleanPath = localPathOrPublicId.startsWith("/")
     ? localPathOrPublicId
