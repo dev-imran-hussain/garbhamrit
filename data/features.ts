@@ -1,7 +1,7 @@
 export const keyFeatures = [
   {
     id: "kf-1",
-    title: "23+ चयनित आयुर्वेदिक जड़ी-बूटियां",
+    title: "23+ Proven Ayurvedic Herbs Used",
     description: "ऋषि-मुनियों के पारंपरिक ग्रंथों और आधुनिक शोध का प्रामाणिक संगम।",
     badge: "100% हर्बल",
   },
@@ -13,25 +13,25 @@ export const keyFeatures = [
   },
   {
     id: "kf-3",
-    title: "हार्मोनल संतुलन एवं स्फूर्ति",
+    title: "Hormonal Balance & Active Energy",
     description: "शारीरिक थकान दूर कर प्राकृतिक ऊर्जा व हार्मोन्स का संतुलन बनाए रखे।",
     badge: "ऊर्जावान",
   },
   {
     id: "kf-4",
-    title: "आसान एवं सुगम सेवन",
+    title: "Easy & Convenient to Use",
     description: "बिना किसी कड़वाहट या परेशानी के आसानी से दूध या पानी के साथ घुलने वाला।",
     badge: "स्वादिष्ट",
   },
   {
     id: "kf-5",
-    title: "200 ग्राम प्रीमियम पैक",
+    title: "200gm Large Packet",
     description: "विशेष एयरटाइट सुरक्षा जार में पैक ताकि शुद्धता और खुशबू बरकरार रहे।",
     badge: "प्रीमियम पैक",
   },
   {
     id: "kf-6",
-    title: "शून्य केमिकल और प्रिजर्वेटिव",
+    title: "Free from Chemicals",
     description: "कोई कृत्रिम रंग, रसायन या स्वाद नहीं, सिर्फ शुद्ध प्राकृतिक आयुर्वेदिक तत्व।",
     badge: "शून्य रसायन",
   },

@@ -8,8 +8,8 @@ export const KeyFeatures: React.FC = () => {
     <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <SectionHeading
-          badge="विशेषताएं"
-          title="गर्भ अमृत की मुख्य विशेषताएं"
+          badge="Features"
+          title="Main Features OF गर्भ अमृत"
           subtitle="हर पहलू में गुणवत्ता और पारंपरिक शुद्धता का ध्यान रखा गया है।"
         />
 
