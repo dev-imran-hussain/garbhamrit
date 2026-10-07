@@ -22,7 +22,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Primary Call to Action Button beneath the banner graphic with extra spacing */}
-        <div className="px-5 pt-7 pb-6 relative z-10 bg-[#FFF8FA] text-center">
+        <div className="px-5 pt-14 pb-8 relative z-10 bg-[#FFF8FA] text-center">
           <CTAButton
             label="CALL NOW"
             size="lg"
