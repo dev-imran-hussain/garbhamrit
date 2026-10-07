@@ -8,7 +8,7 @@ export const Ingredients: React.FC = () => {
     <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <SectionHeading
-          badge="प्राकृतिक जड़ी-बूटियां"
+          badge="Natural Herbs"
           title="Main Ingredients"
           subtitle="आयुर्वेद के प्राचीन ग्रंथों से चुनी गई 23+ प्रभावशाली जड़ी-बूटियों का शक्तिशाली और संतुलित मिश्रण।"
         />
