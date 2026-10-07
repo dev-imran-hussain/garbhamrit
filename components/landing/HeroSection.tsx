@@ -7,27 +7,29 @@ import { getOptimizedImage } from "@/lib/images";
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-[#FFF8FA] border-b border-[#F3BFD2]/40">
-      {/* Mobile-first Layout: Exact match with full mobile banner graphic */}
+      {/* Mobile-first Layout: Full viewport vertical auto-alignment */}
       <div className="block md:hidden">
-        {/* Banner Graphic Container */}
-        <div className="relative w-full aspect-[695/1024]">
-          <Image
-            src={getOptimizedImage("/hero/hero-banner.webp", { width: 750 })}
-            alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-top"
-          />
-        </div>
+        <div className="flex flex-col items-center justify-between min-h-[calc(100svh-44px)] bg-[#FFF8FA]">
+          {/* Banner Graphic Container - perfectly fitted */}
+          <div className="relative w-full aspect-[695/1024] max-h-[72vh] shrink-0">
+            <Image
+              src={getOptimizedImage("/hero/hero-banner.webp", { width: 750 })}
+              alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
+              fill
+              priority
+              sizes="100vw"
+              className="object-contain object-top"
+            />
+          </div>
 
-        {/* Primary Call to Action Button beneath the banner graphic with extra spacing */}
-        <div className="px-5 pt-14 pb-8 relative z-10 bg-[#FFF8FA] text-center">
-          <CTAButton
-            label="CALL NOW"
-            size="lg"
-            className="w-full max-w-sm mx-auto shadow-xl text-lg font-bold tracking-wider"
-          />
+          {/* Primary Call to Action Button placed cleanly at bottom */}
+          <div className="w-full px-5 pt-3 pb-6 flex items-center justify-center">
+            <CTAButton
+              label="CALL NOW"
+              size="lg"
+              className="w-full max-w-[340px] shadow-xl text-lg font-bold tracking-wider"
+            />
+          </div>
         </div>
       </div>
 
