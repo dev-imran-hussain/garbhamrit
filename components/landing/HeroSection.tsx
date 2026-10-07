@@ -21,12 +21,12 @@ export const HeroSection: React.FC = () => {
           />
         </div>
 
-        {/* Primary Call to Action Button right beneath the banner graphic */}
-        <div className="px-4 py-4 -mt-2 relative z-10 bg-gradient-to-b from-transparent via-[#FFF8FA] to-[#FFF8FA] text-center">
+        {/* Primary Call to Action Button beneath the banner graphic with extra spacing */}
+        <div className="px-5 pt-7 pb-6 relative z-10 bg-[#FFF8FA] text-center">
           <CTAButton
             label="CALL NOW"
             size="lg"
-            className="w-full max-w-sm mx-auto shadow-lg text-lg tracking-wider"
+            className="w-full max-w-sm mx-auto shadow-xl text-lg font-bold tracking-wider"
           />
         </div>
       </div>
