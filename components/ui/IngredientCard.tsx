@@ -7,13 +7,13 @@ export const IngredientCard: React.FC<{ ingredient: Ingredient }> = ({
 }) => {
   return (
     <div className="bg-white border-2 border-[#F3BFD2] rounded-3xl p-5 lg:p-7 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:border-[#E83D82]/60 transition-all duration-300 group">
-      <div className="relative w-24 h-24 lg:w-32 lg:h-32 mb-4 rounded-full overflow-hidden bg-[#FFF0F5] border-2 border-[#F3BFD2] flex items-center justify-center p-2 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+      <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mb-4 rounded-full overflow-hidden bg-[#FFF0F5] border-2 border-[#F3BFD2] flex items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300 shadow-inner">
         <Image
           src={ingredient.image}
           alt={ingredient.name}
-          width={120}
-          height={120}
-          className="object-contain"
+          fill
+          sizes="(max-width: 640px) 112px, (max-width: 1024px) 128px, 144px"
+          className="object-contain p-1.5"
         />
       </div>
       <h3 className="font-extrabold text-lg sm:text-xl lg:text-2xl text-[#B52C62] leading-snug mb-1">

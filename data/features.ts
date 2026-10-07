@@ -43,7 +43,7 @@ export const usageSteps = [
     title: "मात्रा लें (Quantity)",
     subtitle: "1 छोटा चम्मच (5 ग्राम)",
     description: "सुबह और शाम के समय एक चम्मच गर्भ अमृत पाउडर निकालें।",
-    image: "/steps/step-bowl.jpg",
+    image: "/steps/step-bowl.png",
     alt: "पाउडर मात्रा बाउल (Quantity bowl)",
   },
   {
