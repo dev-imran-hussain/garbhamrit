@@ -11,22 +11,22 @@ export const HeroSection: React.FC = () => {
       <div className="block md:hidden">
         <div className="flex flex-col items-center min-h-[calc(100svh-56px)] bg-[#FFF8FA]">
           {/* Top spacer (equal gap between TopCallBar and Image) */}
-          <div className="flex-1 min-h-3" />
+          <div className="flex-1 min-h-2" />
 
-          {/* Banner Graphic Container - centered vertically */}
-          <div className="relative w-full aspect-[695/1024] max-h-[62vh] shrink-0">
+          {/* Banner Graphic Container - scaled up and centered vertically */}
+          <div className="relative w-full aspect-[695/1024] max-h-[72vh] shrink-0">
             <Image
               src={getOptimizedImage("/hero/hero-banner.webp", { width: 750 })}
               alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
               fill
               priority
               sizes="100vw"
-              className="object-contain object-center"
+              className="object-contain object-center scale-[1.04]"
             />
           </div>
 
           {/* Bottom spacer (equal gap between Image and CTA button) */}
-          <div className="flex-1 min-h-3" />
+          <div className="flex-1 min-h-2" />
 
           {/* Primary Call to Action Button placed cleanly at bottom */}
           <div className="w-full px-5 pb-5 shrink-0 flex items-center justify-center">
