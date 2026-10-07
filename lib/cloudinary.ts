@@ -86,3 +86,4 @@ export const ASSET_MAP = {
     shilajit: "garbhamrit/ingredients/shilajit",
   },
 };
+

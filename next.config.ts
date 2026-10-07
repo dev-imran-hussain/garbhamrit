@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+// Check if building for GitHub Pages or standalone domain
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+const basePath = isGithubPages ? "/garbhamrit" : "";
+
 const nextConfig: NextConfig = {
   output: "export",
 
@@ -13,8 +17,10 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  basePath: "/pplandingpage",
-  assetPrefix: "/pplandingpage/",
+  ...(basePath && {
+    basePath,
+    assetPrefix: `${basePath}/`,
+  }),
 };
 
 export default nextConfig;

@@ -40,7 +40,7 @@ export const keyFeatures = [
 export const usageSteps = [
   {
     step: "01",
-    title: "मात्रा लें (Quantity)",
+    title: "Quantity (मात्रा लें)",
     subtitle: "1 छोटा चम्मच (5 ग्राम)",
     description: "सुबह और शाम के समय एक चम्मच गर्भ अमृत पाउडर निकालें।",
     image: "/steps/step-bowl.png",
@@ -48,7 +48,7 @@ export const usageSteps = [
   },
   {
     step: "02",
-    title: "मिश्रण तैयार करें (Mix)",
+    title: "Mix (मिश्रण तैयार करें)",
     subtitle: "गुनगुना दूध या पानी",
     description: "एक गिलास हल्के गर्म ताजे दूध या गुनगुने पानी में अच्छी तरह मिलाएं।",
     image: "/steps/step-glass.png",
@@ -56,7 +56,7 @@ export const usageSteps = [
   },
   {
     step: "03",
-    title: "नियमित सेवन (Daily Habit)",
+    title: "Daily Habit (नियमित सेवन)",
     subtitle: "रात को सोने से पहले / नियमित समय",
     description: "सर्वोत्तम लाभ के लिए लगातार 60 से 90 दिनों तक नियमित रूप से सेवन करें।",
     image: "/steps/step-moon.png",
