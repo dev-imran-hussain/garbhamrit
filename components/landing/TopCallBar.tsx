@@ -10,10 +10,10 @@ export const TopCallBar: React.FC = () => {
         className="
           flex items-center justify-center
           gap-2.5 sm:gap-3
-          h-11 sm:h-12 lg:h-14
+          h-14 sm:h-14 lg:h-16
           px-4
           font-semibold
-          text-base sm:text-lg lg:text-xl
+          text-lg sm:text-xl
           whitespace-nowrap
           transition-all
           hover:bg-[#C92F6C]
@@ -21,11 +21,11 @@ export const TopCallBar: React.FC = () => {
         aria-label={`Call Now ${siteConfig.phoneDisplay}`}
       >
         <Phone
-          className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 animate-pulse"
+          className="w-5.5 h-5.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 animate-pulse"
           strokeWidth={2.5}
         />
 
-        <span className="font-medium">Call Now</span>
+        <span className="font-semibold">Call Now</span>
 
         <span className="font-extrabold tracking-wider">
           {siteConfig.phoneDisplay}

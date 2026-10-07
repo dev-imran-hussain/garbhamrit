@@ -7,23 +7,29 @@ import { getOptimizedImage } from "@/lib/images";
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-[#FFF8FA] border-b border-[#F3BFD2]/40">
-      {/* Mobile-first Layout: Full viewport vertical auto-alignment */}
+      {/* Mobile-first Layout: Balanced vertical spacing with equal gap above & below hero image */}
       <div className="block md:hidden">
-        <div className="flex flex-col items-center justify-between min-h-[calc(100svh-44px)] bg-[#FFF8FA]">
-          {/* Banner Graphic Container - perfectly fitted */}
-          <div className="relative w-full aspect-[695/1024] max-h-[72vh] shrink-0">
+        <div className="flex flex-col items-center min-h-[calc(100svh-56px)] bg-[#FFF8FA]">
+          {/* Top spacer (equal gap between TopCallBar and Image) */}
+          <div className="flex-1 min-h-3" />
+
+          {/* Banner Graphic Container - centered vertically */}
+          <div className="relative w-full aspect-[695/1024] max-h-[62vh] shrink-0">
             <Image
               src={getOptimizedImage("/hero/hero-banner.webp", { width: 750 })}
               alt="गर्भ अमृत™ - माँ बनने की तैयारी में प्रकृति का साथ"
               fill
               priority
               sizes="100vw"
-              className="object-contain object-top"
+              className="object-contain object-center"
             />
           </div>
 
+          {/* Bottom spacer (equal gap between Image and CTA button) */}
+          <div className="flex-1 min-h-3" />
+
           {/* Primary Call to Action Button placed cleanly at bottom */}
-          <div className="w-full px-5 pt-3 pb-6 flex items-center justify-center">
+          <div className="w-full px-5 pb-5 shrink-0 flex items-center justify-center">
             <CTAButton
               label="CALL NOW"
               size="lg"
