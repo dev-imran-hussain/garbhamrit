@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-// Check if building for GitHub Pages or standalone domain
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-const basePath = isGithubPages ? "/garbhamrit" : "";
+// GitHub Pages uses repo name as base path (e.g. /pplandingpage)
+// In local dev, basePath is empty ("") so localhost:3000 works normally
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
