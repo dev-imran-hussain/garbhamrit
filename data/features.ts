@@ -63,26 +63,25 @@ export const usageSteps = [
     alt: "नियमित रात का सेवन (Daily habit moon)",
   },
 ];
-
 export const comparisonPoints = [
   {
-    title: "पारंपरिक आयुर्वेदिक शुद्धि",
-    us: "23+ सिद्ध जड़ी-बूटियों का शास्त्रीय संतुलन",
-    others: "केमिकल और सिंथेटिक विटामिन्स",
+    title: "Herbal Blend",
+    us: "23+ Ayurvedic herbs का balanced blend",
+    others: "Ingredients product के अनुसार अलग-अलग",
   },
   {
-    title: "सुरक्षा एवं दुष्प्रभाव",
-    us: "100% प्राकृतिक, शून्य साइड-इफेक्ट्स",
-    others: "संभावित हार्मोनल असंतुलन व साइड इफेक्ट्स",
+    title: "Natural Formula",
+    us: "Natural herbs पर आधारित formulation",
+    others: "Synthetic ingredients हो सकते हैं",
   },
   {
-    title: "प्रमाणित गुणवत्ता",
-    us: "GMP और आयुष अनुपालन में निर्मित",
-    others: "गुणवत्ता मानकों की कमी",
+    title: "Quality",
+    us: "GMP & AYUSH standards के अनुसार निर्मित",
+    others: "Quality standards अलग-अलग हो सकते हैं",
   },
   {
-    title: "लंबे समय तक स्थायी लाभ",
-    us: "जड़ से पोषण और प्राकृतिक संतुलन",
-    others: "केवल अस्थायी प्रभाव",
+    title: "Daily Use",
+    us: "दूध या गुनगुने पानी के साथ easy to use",
+    others: "Usage method product के अनुसार अलग",
   },
 ];

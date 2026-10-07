@@ -8,7 +8,7 @@ export const WhyChooseUs: React.FC = () => {
     <section className="py-14 md:py-20 lg:py-24 bg-[#FFF0F5]/50 border-b border-[#F3BFD2]/40">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="तुलना एवं श्रेष्ठता"
+          badge="Comparison & Superiority"
           title="अन्य विकल्पों की तुलना में गर्भ अमृत क्यों?"
           subtitle="समझिए कि क्यों आयुर्वेदिक गर्भ अमृत आपके मातृत्व के सफर का सबसे भरोसेमंद साथी है।"
         />
@@ -16,12 +16,12 @@ export const WhyChooseUs: React.FC = () => {
         <div className="bg-white border-2 border-[#F3BFD2] rounded-3xl overflow-hidden shadow-lg">
           {/* Table Header */}
           <div className="grid grid-cols-12 bg-[#FFF0F5] border-b-2 border-[#F3BFD2] p-4 sm:p-6 text-sm sm:text-base lg:text-lg font-bold text-[#4A2635]">
-            <div className="col-span-5 sm:col-span-4">विशेषता / मानक</div>
+            <div className="col-span-5 sm:col-span-4">Features</div>
             <div className="col-span-4 sm:col-span-4 text-[#B52C62] flex items-center gap-1.5 font-extrabold">
               गर्भ अमृत™
             </div>
             <div className="col-span-3 sm:col-span-4 text-[#795968]">
-              अन्य सामान्य उत्पाद
+              Other Products
             </div>
           </div>
 
