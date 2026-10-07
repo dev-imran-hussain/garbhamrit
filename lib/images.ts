@@ -3,7 +3,7 @@
  * 
  * Supports both:
  * 1. Cloudinary CDN (when NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME is provided and image is uploaded)
- * 2. Automatic Local Fallback (with automatic GitHub Pages /pplandingpage basePath prepending)
+ * 2. Automatic Local Fallback (serves optimized WebP from /public at root domain on Vercel)
  */
 
 const CLOUDINARY_CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;

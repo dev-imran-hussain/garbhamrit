@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# गर्भ अमृत (Garbh Amrit) - Ayurvedic Wellness Landing Page
 
-## Getting Started
+> प्रीमियम आयुर्वेदिक मातृत्व पोषण एवं गर्भाशय टॉनिक के लिए हाई-कन्वर्जन सिंगल-प्रोडक्ट लैंडिंग पेज।
 
-First, run the development server:
+Built with **Next.js 16 (App Router)**, **Tailwind CSS v4**, and **Lucide React**. Optimized for instant page speed, mobile-first design, and seamless deployment on **Vercel**.
+
+---
+
+## 🚀 Quick Vercel Deployment
+
+Deploying this project to Vercel takes less than 1 minute:
+
+1. Push this repository to your GitHub account: `main` branch.
+2. Go to [vercel.com](https://vercel.com) and log in.
+3. Click **Add New...** -> **Project**.
+4. Import your GitHub repository (`pplandingpage`).
+5. Keep default settings:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `./`
+   - **Build Command**: `next build`
+   - **Output Directory**: `.next`
+6. Click **Deploy**. Your website will be live at `https://<your-project>.vercel.app`.
+
+---
+
+## 🛠️ Local Development
 
 ```bash
+# 1. Install dependencies
+npm install
+
+# 2. Run local dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 3. Open browser
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Performance & Optimizations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **High-Performance WebP Assets**: Reduced total asset size by >98% for near-instant mobile page loading.
+- **Mobile-First Responsive Layout**: Designed to display the emergency helpline banner, hero image, and primary WhatsApp / Call action above the fold.
+- **Native Next.js on Vercel**: Optimized edge routing, automated image delivery, and zero static path collisions.
