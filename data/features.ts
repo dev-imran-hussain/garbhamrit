@@ -43,7 +43,7 @@ export const usageSteps = [
     title: "Quantity",
     subtitle: "1 छोटा चम्मच (5 ग्राम)",
     description: "सुबह और शाम के समय एक चम्मच गर्भ अमृत पाउडर निकालें।",
-    image: "/steps/step-bowl.png",
+    image: "/steps/step-bowl.webp",
     alt: "पाउडर मात्रा बाउल (Quantity bowl)",
   },
   {
@@ -51,7 +51,7 @@ export const usageSteps = [
     title: "Mix",
     subtitle: "गुनगुना दूध या पानी",
     description: "एक गिलास हल्के गर्म ताजे दूध या गुनगुने पानी में अच्छी तरह मिलाएं।",
-    image: "/steps/step-glass.png",
+    image: "/steps/step-glass.webp",
     alt: "ग्लास मिश्रण (Mix with milk or water)",
   },
   {
@@ -59,7 +59,7 @@ export const usageSteps = [
     title: "Daily Habit",
     subtitle: "रात को सोने से पहले / नियमित समय",
     description: "सर्वोत्तम लाभ के लिए लगातार 60 से 90 दिनों तक नियमित रूप से सेवन करें।",
-    image: "/steps/step-moon.png",
+    image: "/steps/step-moon.webp",
     alt: "नियमित रात का सेवन (Daily habit moon)",
   },
 ];
