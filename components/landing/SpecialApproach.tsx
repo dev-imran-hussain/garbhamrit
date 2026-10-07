@@ -38,14 +38,14 @@ export const SpecialApproach: React.FC = () => {
 
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#F3BFD2] bg-white/80 px-4 py-2 text-xs font-bold tracking-wide text-[#B52C62] shadow-sm backdrop-blur-sm sm:text-sm">
             <Sparkles className="h-4 w-4 text-[#E83D82]" />
-            <span>हमारा विशेष दृष्टिकोण</span>
+            <span>Our Mission</span>
           </div>
 
           <h2 className="mb-4 text-3xl font-extrabold leading-tight text-[#8F244E] sm:text-4xl md:text-5xl lg:text-6xl">
-            प्रकृति और मातृत्व का
-            <span className="block text-[#C93468]">
-              सुंदर संतुलन
-            </span>
+            Motherhood and Nature
+              <span className="block text-[#C93468]">
+                  Beautifully Together
+              </span>
           </h2>
 
           <div className="mx-auto h-1 w-16 rounded-full bg-[#E83D82] opacity-80" />
@@ -64,8 +64,7 @@ export const SpecialApproach: React.FC = () => {
             {/* Quote */}
             <blockquote>
               <p className="text-center text-xl font-bold leading-[1.55] text-[#A52B59] sm:text-2xl md:text-3xl lg:text-[2.65rem] lg:leading-[1.45]">
-                “मातृत्व केवल एक अवस्था नहीं, बल्कि शरीर, मन और आत्मा के
-                पूर्ण सामंजस्य का उत्सव है।”
+                   हर महिला को माँ बनने की खुशी मिले
               </p>
             </blockquote>
 
@@ -78,10 +77,8 @@ export const SpecialApproach: React.FC = () => {
 
             {/* Description */}
             <p className="mx-auto max-w-3xl text-center text-sm leading-7 text-[#795968] sm:text-base sm:leading-8 md:text-lg lg:text-xl">
-              गर्भ अमृत केवल एक पोषण सप्लीमेंट नहीं है; यह आयुर्वेद की गहरी
-              समझ और प्राकृतिक पोषण के सिद्धांतों से प्रेरित एक विशेष प्रयास
-              है। शरीर को प्राकृतिक पोषक तत्वों का संतुलित सहयोग मिलने से
-              गर्भावस्था के दौरान बेहतर पोषण और समग्र देखभाल में सहायता मिलती है।
+           गर्भ अमृत™ 23+ आयुर्वेदिक जड़ी-बूटियों से तैयार हर्बल फॉर्मूला है,
+          जो महिलाओं के दैनिक स्वास्थ्य और पोषण को ध्यान में रखकर बनाया गया है।
             </p>
 
             {/* Bottom Highlight */}

@@ -6,17 +6,17 @@ export const ProductIntro: React.FC = () => {
   const cards = [
     {
       icon: Leaf,
-      title: "प्राकृतिक सामग्री",
+      title: "Natural Ingredients",
       desc: "शतावरी, अशोक और लोध्र जैसी 23 प्रामाणिक वनस्पतियों का संपूर्ण संतुलन।",
     },
     {
       icon: ShieldCheck,
-      title: "हर्बल फॉर्मूलेशन",
+      title: "Pure Herbal Formulation",
       desc: "प्राचीन चरक संहिता और सुश्रुत संहिता के दिव्य आयुर्वेदिक सिद्धांतों पर आधारित।",
     },
     {
       icon: HeartPulse,
-      title: "आसान सेवन एवं पोषण",
+      title: "Easy to Use & Nutritious",
       desc: "गुनगुने दूध या पानी के साथ सुगमता से पचने वाला और त्वरित ऊर्जा प्रदाता।",
     },
   ];
@@ -25,8 +25,8 @@ export const ProductIntro: React.FC = () => {
     <section className="py-14 md:py-20 lg:py-24 bg-white border-b border-[#F3BFD2]/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="परिचय"
-          title="गर्भ अमृत क्या है?"
+          badge="Introduction"
+          title="What is गर्भ अमृत ?"
           subtitle="गर्भ अमृत महिलाओं के संपूर्ण प्रजनन स्वास्थ्य, गर्भाशय को प्राकृतिक मजबूती और मातृत्व की सुखद यात्रा के लिए तैयार किया गया एक अद्वितीय आयुर्वेदिक पूरक है।"
         />
 
