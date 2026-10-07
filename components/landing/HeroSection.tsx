@@ -85,12 +85,11 @@ export const HeroSection: React.FC = () => {
             <div className="flex flex-wrap items-center gap-5">
               <CTAButton
                 label="CALL NOW"
-                sublabel="नि:शुल्क विशेषज्ञ परामर्श"
                 size="lg"
                 className="min-w-[240px] shadow-xl"
               />
               <CTAButton
-                label="व्हाट्सएप पर बात करें"
+                label="WHATSAPP"
                 variant="whatsapp"
                 icon="whatsapp"
                 href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20के%20बारे%20में%20जानकारी%20चाहिए`}

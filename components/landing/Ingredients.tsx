@@ -9,7 +9,7 @@ export const Ingredients: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <SectionHeading
           badge="प्राकृतिक जड़ी-बूटियां"
-          title="मुख्य दिव्य घटक (Main Ingredients)"
+          title="Main Ingredients"
           subtitle="आयुर्वेद के प्राचीन ग्रंथों से चुनी गई 23+ प्रभावशाली जड़ी-बूटियों का शक्तिशाली और संतुलित मिश्रण।"
         />
 
