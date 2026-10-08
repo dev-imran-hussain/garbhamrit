@@ -20,14 +20,6 @@ export const CustomerReviews: React.FC = () => {
             <ReviewCard key={rev.id} review={rev} />
           ))}
         </div>
-
-        <div className="text-center">
-          <CTAButton
-            label="विशेषज्ञ से परामर्श लें"
-            size="lg"
-            variant="outline"
-          />
-        </div>
       </div>
     </section>
   );
