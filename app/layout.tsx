@@ -37,6 +37,15 @@ export const metadata: Metadata = {
     locale: "hi_IN",
     type: "website",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -48,6 +57,8 @@ export default function RootLayout({
     <html lang="hi" className={`${poppins.variable} scroll-smooth`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
       </head>
       <body className="min-h-screen flex flex-col bg-[#FFF8FA] text-[#4A2635] selection:bg-[#F3BFD2] selection:text-[#B52C62]">
         {children}
