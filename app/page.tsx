@@ -66,37 +66,45 @@ export default function Home() {
         <SpecialApproach />
 
         {/* 5. Customer Experience & Reviews */}
-        <div id="reviews">
+        <div id="reviews" className="content-visibility-auto">
           <CustomerReviews />
         </div>
 
         {/* 6. How To Use */}
-        <div id="how-to-use">
+        <div id="how-to-use" className="content-visibility-auto">
           <HowToUse />
         </div>
 
         {/* 7. Key Product Features */}
-        <KeyFeatures />
+        <div className="content-visibility-auto">
+          <KeyFeatures />
+        </div>
 
         {/* 8. Why Choose This Product? */}
-        <WhyChooseUs />
+        <div className="content-visibility-auto">
+          <WhyChooseUs />
+        </div>
 
         {/* 9. Main Ingredients */}
-        <div id="ingredients">
+        <div id="ingredients" className="content-visibility-auto">
           <Ingredients />
         </div>
 
         {/* 10. Product Information */}
-        <div id="details">
+        <div id="details" className="content-visibility-auto">
           <ProductDetails />
         </div>
 
         {/* 11. Final CTA */}
-        <FinalCTA />
+        <div className="content-visibility-auto">
+          <FinalCTA />
+        </div>
       </main>
 
       {/* 12. Footer */}
-      <Footer />
+      <div className="content-visibility-auto">
+        <Footer />
+      </div>
 
       {/* Mobile Sticky Call / WhatsApp CTA Bar */}
       <StickyMobileCTA />

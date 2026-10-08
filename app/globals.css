@@ -67,3 +67,9 @@ p, li, blockquote {
   background-image: radial-gradient(rgba(232, 61, 130, 0.04) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+/* Performance: Skip layout/paint calculations for off-screen sections until scrolled */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
