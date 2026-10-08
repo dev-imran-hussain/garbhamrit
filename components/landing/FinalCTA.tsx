@@ -7,9 +7,10 @@ import { getOptimizedImage } from "@/lib/images";
 
 export const FinalCTA: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-[#FFF0F5] to-white relative overflow-hidden border-b border-[#F3BFD2]/40">
-      {/* Decorative BG element */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] opacity-15 pointer-events-none">
+    <section className="relative overflow-hidden border-b border-[#F3BFD2]/40 bg-gradient-to-b from-[#FFF0F5] to-white py-16 md:py-24 lg:py-32">
+
+      {/* Decorative Background */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 opacity-[0.12] lg:h-[700px] lg:w-[700px]">
         <Image
           src={getOptimizedImage("/decorative/flower-bg.svg")}
           alt=""
@@ -18,59 +19,72 @@ export const FinalCTA: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div className="inline-flex items-center gap-2 px-5 py-2 mb-5 text-sm lg:text-base font-bold text-[#B52C62] bg-white border border-[#F3BFD2] rounded-full shadow-xs">
-          <Sparkles className="w-5 h-5 text-[#E83D82]" />
-          <span>स्वस्थ मातृत्व की ओर पहला कदम</span>
+      <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+
+        {/* Badge */}
+        <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#F3BFD2] bg-white px-5 py-2 text-sm font-bold text-[#B52C62] shadow-sm lg:text-base">
+          <Sparkles className="h-5 w-5 text-[#E83D82]" />
+          <span>माँ बनने के खूबसूरत सफर की ओर</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#B52C62] leading-[1.2] mb-5">
-          गर्भ अमृत™ <br />
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A2635] block mt-2">
-            आपके लिए तैयार एक सरल व प्राकृतिक विकल्प
+        {/* Heading */}
+        <h2 className="mb-5 text-3xl font-black leading-[1.2] text-[#B52C62] sm:text-4xl md:text-5xl lg:text-6xl">
+          गर्भ अमृत™
+          <span className="mt-2 block text-2xl font-bold text-[#4A2635] sm:text-3xl md:text-4xl lg:text-5xl">
+             Start Your Daily Routine with Natural Nutrition
           </span>
         </h2>
 
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#795968] max-w-2xl mx-auto mb-10 leading-relaxed">
-          आज ही हमारे वरिष्ठ आयुर्वेदिक विशेषज्ञों से नि:शुल्क परामर्श लें और
-          गर्भ अमृत के साथ अपने स्वास्थ्य को नई शक्ति दें।
+        {/* Description */}
+        <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-[#795968] sm:text-lg md:text-xl">
+          23+ आयुर्वेदिक जड़ी-बूटियों से तैयार गर्भ अमृत™ को
+          अपनी रोज़ाना की wellness routine में आसानी से शामिल करें।
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-8">
+        <div className="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
+
           <CTAButton
-            label="CALL NOW"
-            sublabel="तुरंत नि:शुल्क परामर्श पाएं"
+            label="Order Now"
             size="lg"
-            className="w-full sm:w-auto min-w-[260px] shadow-2xl"
+            className="w-full min-w-[260px] shadow-2xl sm:w-auto"
           />
+
           <CTAButton
-            label="व्हाट्सएप पर ऑर्डर करें"
+            label="Order On WhatsApp"
             variant="whatsapp"
             icon="whatsapp"
             href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20का%20ऑर्डर%20देना%20है`}
             size="lg"
-            className="w-full sm:w-auto min-w-[260px] shadow-2xl"
+            className="w-full min-w-[260px] shadow-2xl sm:w-auto"
           />
+
         </div>
 
-        {/* Security / Trust reassurance badges */}
-        <div className="flex flex-wrap items-center justify-center gap-6 text-sm lg:text-base text-[#795968] font-bold pt-3">
+        {/* Trust Badges */}
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 pt-3 text-sm font-semibold text-[#795968] lg:text-base">
+
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5 text-[#10B981]" />
-            <span>गोपनीय डिलीवरी</span>
+            <ShieldCheck className="h-5 w-5 text-[#10B981]" />
+            <span>गोपनीय Packaging</span>
           </div>
-          <span>•</span>
+
+          <span className="hidden text-[#D9A8BA] sm:block">•</span>
+
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5 text-[#10B981]" />
-            <span>कैश ऑन डिलीवरी (COD)</span>
+            <ShieldCheck className="h-5 w-5 text-[#10B981]" />
+            <span>Cash on Delivery</span>
           </div>
-          <span>•</span>
+
+          <span className="hidden text-[#D9A8BA] sm:block">•</span>
+
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5 text-[#10B981]" />
-            <span>100% संतुष्टि गारंटी</span>
+            <ShieldCheck className="h-5 w-5 text-[#10B981]" />
+            <span>Secure Ordering</span>
           </div>
+
         </div>
+
       </div>
     </section>
   );
