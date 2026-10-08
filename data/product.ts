@@ -2,38 +2,72 @@ import { ProductDetails } from "@/types/landing";
 
 export const siteConfig = {
   name: "गर्भ अमृत™ (Garbh Amrit)",
-  title: "गर्भ अमृत™ - प्राकृतिक मातृत्व सुरक्षा एवं पोषण | 100% आयुर्वेदिक",
-  description: "गर्भ अमृत एक प्रामाणिक 100% शुद्ध आयुर्वेदिक और सुरक्षित फॉर्मूलेशन है, जो महिलाओं में प्राकृतिक स्वास्थ्य, गर्भाशय शुद्धि और मातृत्व योजना को सशक्त बनाता है।",
+
+  title:
+    "गर्भ अमृत™ | 23+ Ayurvedic Herbs for Women's Daily Wellness",
+
+  description:
+    "गर्भ अमृत™ 23+ आयुर्वेदिक जड़ी-बूटियों से तैयार हर्बल फॉर्मूला है, जिसे महिलाओं के दैनिक स्वास्थ्य और पोषण को ध्यान में रखकर बनाया गया है।",
+
   phone: "+919876543210",
   phoneDisplay: "+91 98765 43210",
+
   whatsappNumber: "+919876543210",
+
   email: "support@garbhamrit.in",
+
   supportTiming: "सोमवार - शनिवार: 9:00 AM - 7:00 PM",
+
   address: "आयुर्वेदिक भवन, स्वास्थ्य मार्ग, नई दिल्ली - 110001",
 };
 
 export const product: ProductDetails = {
-  name: "गर्भ अमृत™ (Garbh Amrit)",
-  subtitle: "प्राकृतिक मातृत्व सुरक्षा एवं स्वास्थ्य अमृत",
-  tagline: "मातृत्व के सुंदर सफर में प्रकृति का दिव्य वरदान",
-  category: "आयुर्वेदिक क्लासिकल व हर्बल फॉर्मूलेशन",
-  netQuantity: "200 ग्राम (पाउडर पैक)",
-  mrp: "₹1,499",
-  discountedPrice: "₹999",
-  suggestedUsage: "1 चम्मच (लगभग 5 ग्राम) गुनगुने दूध या पानी के साथ दिन में दो बार, अथवा चिकित्सक के परामर्श अनुसार।",
-  storage: "ठंडी और सूखी जगह पर रखें। सीधी धूप और नमी से बचाएं। बच्चों की पहुंच से दूर रखें।",
-  batchNo: "GA-2026/04",
-  manufacturingDate: "मार्च 2026",
-  expiryDate: "फरवरी 2028 (24 माह)",
+  name: "गर्भ अमृत™ Garbh Amrit",
+
+  subtitle:
+    "महिलाओं के दैनिक स्वास्थ्य और पोषण के लिए Ayurvedic Herbal Formula",
+
+  tagline:
+    "Every woman deserves the beautiful joy of motherhood.",
+
+  category:
+    "Ayurvedic Herbal Formulation",
+
+  netQuantity:
+    "200 Gram",
+
+  mrp:
+    "₹x,xxx",
+
+  discountedPrice:
+    "₹xxx",
+
+  suggestedUsage:
+    "1 छोटा चम्मच (लगभग 5 ग्राम) गुनगुने दूध या पानी के साथ, दिन में दो बार या चिकित्सक की सलाह के अनुसार।",
+
+  storage:
+    "ठंडी और सूखी जगह पर रखें। सीधी धूप और नमी से बचाएं। बच्चों की पहुंच से दूर रखें।",
+
+  batchNo:
+    "GA-2026/04",
+
+  manufacturingDate:
+    "March 2026",
+
+  expiryDate:
+    "2 Years",
+
   highlights: [
-    "23+ प्राचीन दिव्य जड़ी-बूटियों का संतुलित संगम",
-    "100% प्राकृतिक एवं शुद्ध शाकाहारी फॉर्मूलेशन",
-    "बिना किसी हानिकारक केमिकल या प्रिजर्वेटिव",
-    "जीएमपी (GMP) और आयुष (AYUSH) मानकों पर खरा",
-    "मातृत्व स्वास्थ्य और गर्भाशय पोषण में सहायक"
+    "23+ Ayurvedic Herbs का balanced blend",
+    "Natural & Vegetarian Formula",
+    "No Artificial Colors",
+    "GMP & AYUSH Standards के अनुसार निर्मित",
+    "Daily Women's Wellness & Nutrition के लिए",
   ],
+
   helplineNumber: "+919876543210",
+
   helplineDisplay: "+91 98765 43210",
+
   whatsappNumber: "+919876543210",
 };
-

@@ -10,8 +10,8 @@ export const ProductDetails: React.FC = () => {
     <section className="py-14 md:py-20 lg:py-24 bg-[#FFF8FA] border-b border-[#F3BFD2]/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="उत्पाद विवरण"
-          title="उत्पाद की सम्पूर्ण जानकारी (Product Specifications)"
+          badge="Product Details"
+          title="Product की सम्पूर्ण जानकारी"
           subtitle="पारदर्शिता ही हमारा भरोसा है। उत्पाद के सभी विनिर्देश नीचे दिए गए हैं।"
         />
 
@@ -52,7 +52,7 @@ export const ProductDetails: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base">
                 <div className="bg-[#FFF8FA] p-4 lg:p-5 rounded-2xl border border-[#F3BFD2]">
                   <span className="text-[#795968] block text-xs lg:text-sm font-semibold mb-1">
-                    कुल वजन (Net Quantity)
+                    Net Quantity
                   </span>
                   <span className="font-black text-lg lg:text-xl text-[#4A2635]">
                     {product.netQuantity}
@@ -61,7 +61,7 @@ export const ProductDetails: React.FC = () => {
 
                 <div className="bg-[#FFF8FA] p-4 lg:p-5 rounded-2xl border border-[#F3BFD2]">
                   <span className="text-[#795968] block text-xs lg:text-sm font-semibold mb-1">
-                    बैच संख्या (Batch No.)
+                    Batch No.
                   </span>
                   <span className="font-black text-lg lg:text-xl text-[#4A2635]">
                     {product.batchNo}
@@ -70,7 +70,7 @@ export const ProductDetails: React.FC = () => {
 
                 <div className="bg-[#FFF8FA] p-4 lg:p-5 rounded-2xl border border-[#F3BFD2]">
                   <span className="text-[#795968] block text-xs lg:text-sm font-semibold mb-1">
-                    निर्माण तिथि (Mfg. Date)
+                    Mfg. Date
                   </span>
                   <span className="font-black text-lg lg:text-xl text-[#4A2635]">
                     {product.manufacturingDate}
@@ -79,7 +79,7 @@ export const ProductDetails: React.FC = () => {
 
                 <div className="bg-[#FFF8FA] p-4 lg:p-5 rounded-2xl border border-[#F3BFD2]">
                   <span className="text-[#795968] block text-xs lg:text-sm font-semibold mb-1">
-                    समाप्ति अवधि (Expiry)
+                    Expiry
                   </span>
                   <span className="font-black text-lg lg:text-xl text-[#4A2635]">
                     {product.expiryDate}
@@ -90,13 +90,13 @@ export const ProductDetails: React.FC = () => {
               {/* Usage & Storage Notes */}
               <div className="bg-[#FFF0F5]/70 p-5 lg:p-6 rounded-2xl border-2 border-[#F3BFD2] text-sm sm:text-base lg:text-lg space-y-3">
                 <p>
-                  <strong className="text-[#B52C62]">उपयोग विधि: </strong>
+                  <strong className="text-[#B52C62]">How to Use : </strong>
                   <span className="text-[#4A2635]">
                     {product.suggestedUsage}
                   </span>
                 </p>
                 <p>
-                  <strong className="text-[#B52C62]">भंडारण निर्देश: </strong>
+                  <strong className="text-[#B52C62]">Storage Instructions : </strong>
                   <span className="text-[#4A2635]">{product.storage}</span>
                 </p>
               </div>
@@ -104,7 +104,7 @@ export const ProductDetails: React.FC = () => {
               {/* Highlights List */}
               <div className="pt-2">
                 <h4 className="text-xs lg:text-sm font-extrabold text-[#795968] uppercase tracking-wider mb-3">
-                  प्रमुख प्रमाणन व गुणवत्ता बिंदु:
+                  Key Certifications & Quality Highlights
                 </h4>
                 <ul className="space-y-2 text-sm lg:text-base font-medium text-[#4A2635]">
                   {product.highlights.map((h, i) => (
