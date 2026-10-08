@@ -25,32 +25,32 @@ export const Footer: React.FC = () => {
           {/* Col 2: Quick Links */}
           <div>
             <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
-              त्वरित लिंक (Quick Links)
+              Quick Links
             </h4>
             <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
                 <a href="#hero" className="hover:text-white transition-colors">
-                  मुख्य पृष्ठ (Home)
+                  Home
                 </a>
               </li>
               <li>
                 <a href="#ingredients" className="hover:text-white transition-colors">
-                  मुख्य घटक (Ingredients)
+                  Ingredients
                 </a>
               </li>
               <li>
                 <a href="#how-to-use" className="hover:text-white transition-colors">
-                  उपयोग विधि (How to Use)
+                  How to Use
                 </a>
               </li>
               <li>
                 <a href="#reviews" className="hover:text-white transition-colors">
-                  ग्राहक अनुभव (Reviews)
+                  Reviews
                 </a>
               </li>
               <li>
                 <a href="#details" className="hover:text-white transition-colors">
-                  उत्पाद विवरण (Details)
+                  Details
                 </a>
               </li>
             </ul>
@@ -59,32 +59,32 @@ export const Footer: React.FC = () => {
           {/* Col 3: Legal & Trust */}
           <div>
             <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
-              नीति एवं नियम (Legal)
+              Legal
             </h4>
             <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
-                  गोपनीयता नीति (Privacy Policy)
+                  Privacy Policy
                 </span>
               </li>
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
-                  नियम व शर्तें (Terms & Conditions)
+                  Terms & Conditions
                 </span>
               </li>
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
-                  अस्वीकरण (Disclaimer)
+                  Disclaimer
                 </span>
               </li>
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
-                  डिलीवरी नीति (Shipping Policy)
+                  Shipping Policy
                 </span>
               </li>
               <li>
                 <span className="hover:text-white cursor-pointer transition-colors">
-                  वापसी नीति (Return Policy)
+                  Return Policy
                 </span>
               </li>
             </ul>
@@ -93,7 +93,7 @@ export const Footer: React.FC = () => {
           {/* Col 4: Customer Care */}
           <div>
             <h4 className="font-bold text-white mb-4 text-base lg:text-lg tracking-wider uppercase">
-              कस्टमर केयर (Contact Us)
+              Contact Us
             </h4>
             <ul className="space-y-3.5 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li className="flex items-start gap-2.5">
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
         {/* Disclaimer Notice */}
         <div className="py-6 text-xs lg:text-sm text-[#FFE4ED]/60 leading-relaxed border-b border-[#795968]/30">
           <p>
-            <strong>वैधानिक अस्वीकरण (Disclaimer):</strong> यह उत्पाद किसी भी
+            <strong>Disclaimer : </strong> यह उत्पाद किसी भी
             रोग के निदान, उपचार या रोकथाम का दावा नहीं करता है। यह एक शास्त्रीय
             आयुर्वेदिक स्वास्थ्य पूरक है। व्यक्तिगत परिणाम भिन्न हो सकते हैं।
             गर्भावस्था या किसी गंभीर चिकित्सकीय स्थिति के दौरान अपने चिकित्सक की

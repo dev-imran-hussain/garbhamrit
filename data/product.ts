@@ -16,9 +16,9 @@ export const siteConfig = {
 
   email: "support@garbhamrit.in",
 
-  supportTiming: "सोमवार - शनिवार: 9:00 AM - 7:00 PM",
+  supportTiming: "Monday - Saturday: 9:00 AM - 7:00 PM",
 
-  address: "आयुर्वेदिक भवन, स्वास्थ्य मार्ग, नई दिल्ली - 110001",
+  address: "vijaay nagar , Indore , Madhya Pradesh , 452010",
 };
 
 export const product: ProductDetails = {
