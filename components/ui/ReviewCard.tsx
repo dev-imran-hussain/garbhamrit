@@ -43,7 +43,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
           </div>
 
           {review.city && (
-            <p className="mt-0.5 truncate text-xs text-[#795968] lg:text-sm">
+            <p className="mt-0.5 truncate text-xs font-medium text-[#5A3848] lg:text-sm">
               {review.city}
             </p>
           )}
@@ -57,7 +57,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
               />
             ))}
 
-            <span className="ml-1 text-xs font-semibold text-[#795968]">
+            <span className="ml-1 text-xs font-bold text-[#5A3848]">
               {review.rating}.0
             </span>
           </div>
@@ -66,7 +66,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
 
       {/* Review */}
       <div className="relative mt-6 flex-1">
-        <p className="text-sm leading-7 text-[#5F4650] lg:text-base lg:leading-7">
+        <p className="text-sm leading-7 font-medium sm:font-semibold text-[#4A2635] lg:text-base lg:leading-7">
           “{review.review}”
         </p>
       </div>
@@ -75,7 +75,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
       <div className="mt-6 flex items-center justify-between border-t border-[#F3BFD2]/40 pt-4">
 
         {review.verified ? (
-          <div className="flex items-center gap-1.5 text-xs font-semibold text-[#10B981]">
+          <div className="flex items-center gap-1.5 text-xs font-bold text-[#10B981]">
             <BadgeCheck className="h-4 w-4" />
             <span>Verified Experience</span>
           </div>
@@ -84,7 +84,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
         )}
 
         {review.date && (
-          <span className="text-xs font-medium text-[#9A7A87]">
+          <span className="text-xs font-semibold text-[#8B6476]">
             {review.date}
           </span>
         )}

@@ -36,7 +36,7 @@ export const FinalCTA: React.FC = () => {
         </h2>
 
         {/* Description */}
-        <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-[#795968] sm:text-lg md:text-xl">
+        <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed font-medium sm:font-semibold text-[#5A3848] sm:text-lg md:text-xl">
           23+ आयुर्वेदिक जड़ी-बूटियों से तैयार गर्भ अमृत™ को
           अपनी रोज़ाना की wellness routine में आसानी से शामिल करें।
         </p>
@@ -62,7 +62,7 @@ export const FinalCTA: React.FC = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 pt-3 text-sm font-semibold text-[#795968] lg:text-base">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 pt-3 text-sm font-bold text-[#5A3848] lg:text-base">
 
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-5 w-5 text-[#10B981]" />

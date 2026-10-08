@@ -20,7 +20,7 @@ export const Ingredients: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-10 text-center bg-[#FFF8FA] border-2 border-[#F3BFD2] rounded-3xl p-5 sm:p-6 max-w-2xl mx-auto text-sm lg:text-base font-semibold text-[#795968] shadow-sm">
+        <div className="mt-10 text-center bg-[#FFF8FA] border-2 border-[#F3BFD2] rounded-3xl p-5 sm:p-6 max-w-2xl mx-auto text-sm lg:text-base font-bold text-[#5A3848] shadow-sm">
           ✨ इनके अलावा अन्य 15+ सूक्ष्म पोषक आयुर्वेदिक घटक भी शामिल हैं।
         </div>
       </div>

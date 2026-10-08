@@ -20,10 +20,10 @@ export const IngredientCard: React.FC<{ ingredient: Ingredient }> = ({
       <h3 className="font-extrabold text-lg sm:text-xl lg:text-2xl text-[#B52C62] leading-snug mb-1">
         {ingredient.name}
       </h3>
-      <span className="text-xs sm:text-sm font-bold text-[#795968] mb-3 uppercase tracking-wider">
+      <span className="text-xs sm:text-sm font-extrabold text-[#5A3848] mb-3 uppercase tracking-wider">
         {ingredient.hindiName}
       </span>
-      <p className="text-xs sm:text-sm lg:text-base text-[#4A2635]/90 leading-relaxed">
+      <p className="text-xs sm:text-sm lg:text-base font-medium sm:font-semibold text-[#4A2635] leading-relaxed">
         {ingredient.benefit}
       </p>
     </div>

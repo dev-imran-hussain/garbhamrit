@@ -12,11 +12,11 @@ export const Footer: React.FC = () => {
             <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-4 tracking-wide">
               गर्भ अमृत™
             </h3>
-            <p className="text-[#FFE4ED]/80 leading-relaxed mb-6 text-sm lg:text-base">
+            <p className="text-[#FFE4ED]/90 font-medium leading-relaxed mb-6 text-sm lg:text-base">
               प्राचीन भारतीय आयुर्वेद और आधुनिक गुणवत्ता मानकों के साथ तैयार
               किया गया प्राकृतिक मातृत्व स्वास्थ्य पूरक।
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#B52C62]/50 rounded-full text-xs lg:text-sm text-[#F3BFD2] border border-[#F3BFD2]/30">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#B52C62]/50 rounded-full text-xs lg:text-sm font-semibold text-[#F3BFD2] border border-[#F3BFD2]/30">
               <Heart className="w-4 h-4 text-[#E83D82]" />
               <span>हजारों महिलाओं द्वारा प्रमाणित</span>
             </div>
@@ -122,9 +122,9 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Disclaimer Notice */}
-        <div className="py-6 text-xs lg:text-sm text-[#FFE4ED]/60 leading-relaxed border-b border-[#795968]/30">
+        <div className="py-6 text-xs lg:text-sm text-[#FFE4ED]/75 font-medium leading-relaxed border-b border-[#795968]/30">
           <p>
-            <strong>Disclaimer : </strong> यह उत्पाद किसी भी
+            <strong className="font-bold text-white">Disclaimer : </strong> यह उत्पाद किसी भी
             रोग के निदान, उपचार या रोकथाम का दावा नहीं करता है। यह एक शास्त्रीय
             आयुर्वेदिक स्वास्थ्य पूरक है। व्यक्तिगत परिणाम भिन्न हो सकते हैं।
             गर्भावस्था या किसी गंभीर चिकित्सकीय स्थिति के दौरान अपने चिकित्सक की

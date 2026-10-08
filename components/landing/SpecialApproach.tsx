@@ -63,7 +63,7 @@ export const SpecialApproach: React.FC = () => {
 
             {/* Quote */}
             <blockquote>
-              <p className="text-center text-xl font-bold leading-[1.55] text-[#A52B59] sm:text-2xl md:text-3xl lg:text-[2.65rem] lg:leading-[1.45]">
+              <p className="text-center text-xl font-extrabold leading-[1.55] text-[#A52B59] sm:text-2xl md:text-3xl lg:text-[2.65rem] lg:leading-[1.45]">
                    हर महिला को माँ बनने की खुशी मिले
               </p>
             </blockquote>
@@ -76,7 +76,7 @@ export const SpecialApproach: React.FC = () => {
             </div>
 
             {/* Description */}
-            <p className="mx-auto max-w-3xl text-center text-sm leading-7 text-[#795968] sm:text-base sm:leading-8 md:text-lg lg:text-xl">
+            <p className="mx-auto max-w-3xl text-center text-sm leading-7 font-medium sm:font-semibold text-[#5A3848] sm:text-base sm:leading-8 md:text-lg lg:text-xl">
            गर्भ अमृत™ 23+ आयुर्वेदिक जड़ी-बूटियों से तैयार हर्बल फॉर्मूला है,
           जो महिलाओं के दैनिक स्वास्थ्य और पोषण को ध्यान में रखकर बनाया गया है।
             </p>
@@ -84,7 +84,7 @@ export const SpecialApproach: React.FC = () => {
             {/* Bottom Highlight */}
             <div className="mx-auto mt-8 flex max-w-xl items-center justify-center gap-2 rounded-2xl border border-[#F3BFD2]/70 bg-[#FFF0F5]/70 px-4 py-3 text-center sm:mt-10 sm:px-6">
               <Sparkles className="h-4 w-4 shrink-0 text-[#E83D82]" />
-              <span className="text-xs font-semibold text-[#9B3158] sm:text-sm">
+              <span className="text-xs font-bold text-[#9B3158] sm:text-sm">
                 प्राकृतिक पोषण • आयुर्वेदिक दृष्टिकोण • मातृत्व की देखभाल
               </span>
             </div>

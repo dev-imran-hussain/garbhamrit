@@ -24,7 +24,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       } ${className}`}
     >
       {badge && (
-        <span className="inline-block px-4 py-1.5 mb-3.5 text-xs sm:text-sm lg:text-base font-semibold tracking-wider text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full uppercase shadow-xs">
+        <span className="inline-block px-4 py-1.5 mb-3.5 text-xs sm:text-sm lg:text-base font-bold tracking-wider text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full uppercase shadow-xs">
           {badge}
         </span>
       )}
@@ -32,7 +32,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         {title}
       </h2>
       {subtitle && (
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#795968] leading-relaxed">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium sm:font-semibold text-[#5A3848] leading-relaxed">
           {subtitle}
         </p>
       )}

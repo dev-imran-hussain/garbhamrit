@@ -55,7 +55,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
         <span>{label}</span>
       </div>
       {sublabel && (
-        <span className="text-xs sm:text-sm lg:text-base opacity-90 font-normal mt-0.5">
+        <span className="text-xs sm:text-sm lg:text-base opacity-90 font-medium mt-0.5">
           {sublabel}
         </span>
       )}

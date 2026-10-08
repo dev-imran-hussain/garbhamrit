@@ -44,19 +44,19 @@ export const HeroSection: React.FC = () => {
         <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Left: Text, Bullets, and Call to Actions */}
           <div className="col-span-7">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 mb-5 text-sm lg:text-base font-semibold text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full shadow-xs">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 mb-5 text-sm lg:text-base font-bold text-[#B52C62] bg-[#FFF0F5] border border-[#F3BFD2] rounded-full shadow-xs">
               <span>🌸 100% प्राकृतिक एवं सुरक्षित आयुर्वेदिक पाउडर</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#B52C62] leading-[1.15] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-[#B52C62] leading-[1.15] mb-4">
               गर्भ अमृत™
             </h1>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E3A5F] mb-6 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1E3A5F] mb-6 leading-tight">
               माँ बनने की तैयारी में <span className="text-[#E83D82]">प्रकृति का साथ</span>
             </h2>
 
-            <div className="inline-block bg-[#E83D82] text-white font-medium text-base md:text-lg lg:text-xl px-6 py-3 lg:px-8 lg:py-3.5 rounded-full mb-8 shadow-md">
+            <div className="inline-block bg-[#E83D82] text-white font-bold text-base md:text-lg lg:text-xl px-6 py-3 lg:px-8 lg:py-3.5 rounded-full mb-8 shadow-md">
               परंपरागत जड़ी-बूटियों से तैयार प्राकृतिक सपोर्ट पाउडर
             </div>
 
@@ -66,7 +66,7 @@ export const HeroSection: React.FC = () => {
                 <div className="w-11 h-11 lg:w-13 lg:h-13 rounded-full bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center text-xl lg:text-2xl shrink-0">
                   🍃
                 </div>
-                <span className="text-base lg:text-xl font-bold text-[#4A2635]">
+                <span className="text-base lg:text-xl font-extrabold text-[#4A2635]">
                   महिलाओं के लिए प्राकृतिक सामग्री
                 </span>
               </div>
@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
                 <div className="w-11 h-11 lg:w-13 lg:h-13 rounded-full bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center text-xl lg:text-2xl shrink-0">
                   🌸
                 </div>
-                <span className="text-base lg:text-xl font-bold text-[#4A2635]">
+                <span className="text-base lg:text-xl font-extrabold text-[#4A2635]">
                   23 चयनित हर्ब्स एवं आयुर्वेदिक सामग्री
                 </span>
               </div>
@@ -84,7 +84,7 @@ export const HeroSection: React.FC = () => {
                 <div className="w-11 h-11 lg:w-13 lg:h-13 rounded-full bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center text-xl lg:text-2xl shrink-0">
                   ✨
                 </div>
-                <span className="text-base lg:text-xl font-bold text-[#4A2635]">
+                <span className="text-base lg:text-xl font-extrabold text-[#4A2635]">
                   प्रजनन क्षमता में सुधार • गर्भाशय पोषण • हार्मोनल संतुलन
                 </span>
               </div>
@@ -120,9 +120,9 @@ export const HeroSection: React.FC = () => {
                 className="object-cover"
               />
               {/* Subtle aesthetic soft badge */}
-              <div className="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl border border-[#F3BFD2] flex items-center justify-between text-sm lg:text-base font-bold text-[#4A2635] shadow-lg">
+              <div className="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl border border-[#F3BFD2] flex items-center justify-between text-sm lg:text-base font-extrabold text-[#4A2635] shadow-lg">
                 <span className="text-[#B52C62]">100% प्राकृतिक | सुरक्षित | प्रभावी</span>
-                <span className="text-[#795968] font-semibold bg-[#FFF0F5] px-3 py-1 rounded-full border border-[#F3BFD2]">200 gm पैक</span>
+                <span className="text-[#5A3848] font-bold bg-[#FFF0F5] px-3 py-1 rounded-full border border-[#F3BFD2]">200 gm पैक</span>
               </div>
             </div>
           </div>

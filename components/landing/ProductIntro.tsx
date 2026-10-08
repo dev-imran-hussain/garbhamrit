@@ -44,7 +44,7 @@ export const ProductIntro: React.FC = () => {
                 <h3 className="font-extrabold text-xl lg:text-2xl text-[#B52C62] mb-3">
                   {card.title}
                 </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-[#795968] leading-relaxed">
+                <p className="text-sm sm:text-base lg:text-lg font-medium sm:font-semibold text-[#5A3848] leading-relaxed">
                   {card.desc}
                 </p>
               </div>

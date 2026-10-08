@@ -32,14 +32,14 @@ export const WhyChooseUs: React.FC = () => {
                 key={idx}
                 className="grid grid-cols-12 p-4 sm:p-6 text-xs sm:text-base lg:text-lg items-center hover:bg-[#FFF8FA] transition-colors"
               >
-                <div className="col-span-5 sm:col-span-4 font-bold text-[#4A2635] pr-3">
+                <div className="col-span-5 sm:col-span-4 font-extrabold text-[#4A2635] pr-3">
                   {item.title}
                 </div>
-                <div className="col-span-4 sm:col-span-4 text-[#B52C62] font-semibold flex items-start gap-2 pr-3">
+                <div className="col-span-4 sm:col-span-4 text-[#B52C62] font-bold flex items-start gap-2 pr-3">
                   <Check className="w-5 h-5 lg:w-6 lg:h-6 text-[#10B981] shrink-0 mt-0.5" />
                   <span>{item.us}</span>
                 </div>
-                <div className="col-span-3 sm:col-span-4 text-[#795968] flex items-start gap-2">
+                <div className="col-span-3 sm:col-span-4 text-[#6C4D5C] font-medium sm:font-semibold flex items-start gap-2">
                   <X className="w-5 h-5 lg:w-6 lg:h-6 text-[#EF4444] shrink-0 mt-0.5" />
                   <span>{item.others}</span>
                 </div>

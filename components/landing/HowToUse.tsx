@@ -125,13 +125,13 @@ export const HowToUse: React.FC = () => {
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="text-[#596579] font-medium text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-2">
+                <p className="text-[#3C4A5E] font-semibold text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-2">
                   {step.description}
                 </p>
 
                 {/* SUBTITLE */}
                 {step.subtitle && (
-                  <p className="text-[#E83D82] font-bold text-xs sm:text-sm md:text-base">
+                  <p className="text-[#E83D82] font-extrabold text-xs sm:text-sm md:text-base">
                     {step.subtitle}
                   </p>
                 )}

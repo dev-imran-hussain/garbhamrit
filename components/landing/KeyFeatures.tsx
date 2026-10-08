@@ -31,7 +31,7 @@ export const KeyFeatures: React.FC = () => {
                 <h3 className="font-extrabold text-lg lg:text-2xl text-[#4A2635] mb-2.5">
                   {feat.title}
                 </h3>
-                <p className="text-sm lg:text-base text-[#795968] leading-relaxed">
+                <p className="text-sm lg:text-base font-medium sm:font-semibold text-[#5A3848] leading-relaxed">
                   {feat.description}
                 </p>
               </div>

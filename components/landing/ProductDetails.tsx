@@ -88,25 +88,25 @@ export const ProductDetails: React.FC = () => {
               </div>
 
               {/* Usage & Storage Notes */}
-              <div className="bg-[#FFF0F5]/70 p-5 lg:p-6 rounded-2xl border-2 border-[#F3BFD2] text-sm sm:text-base lg:text-lg space-y-3">
+              <div className="bg-[#FFF0F5]/70 p-5 lg:p-6 rounded-2xl border-2 border-[#F3BFD2] text-sm sm:text-base lg:text-lg space-y-3 font-medium">
                 <p>
-                  <strong className="text-[#B52C62]">How to Use : </strong>
-                  <span className="text-[#4A2635]">
+                  <strong className="font-extrabold text-[#B52C62]">How to Use : </strong>
+                  <span className="font-semibold text-[#4A2635]">
                     {product.suggestedUsage}
                   </span>
                 </p>
                 <p>
-                  <strong className="text-[#B52C62]">Storage Instructions : </strong>
-                  <span className="text-[#4A2635]">{product.storage}</span>
+                  <strong className="font-extrabold text-[#B52C62]">Storage Instructions : </strong>
+                  <span className="font-semibold text-[#4A2635]">{product.storage}</span>
                 </p>
               </div>
 
               {/* Highlights List */}
               <div className="pt-2">
-                <h4 className="text-xs lg:text-sm font-extrabold text-[#795968] uppercase tracking-wider mb-3">
+                <h4 className="text-xs lg:text-sm font-extrabold text-[#5A3848] uppercase tracking-wider mb-3">
                   Key Certifications & Quality Highlights
                 </h4>
-                <ul className="space-y-2 text-sm lg:text-base font-medium text-[#4A2635]">
+                <ul className="space-y-2 text-sm lg:text-base font-semibold text-[#4A2635]">
                   {product.highlights.map((h, i) => (
                     <li key={i} className="flex items-center gap-2.5">
                       <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-[#10B981] shrink-0" />
