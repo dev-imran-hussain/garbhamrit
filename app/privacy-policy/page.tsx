@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalPageLayout title="गोपनीयता नीति (Privacy Policy)">
+    <LegalPageLayout title="Privacy Policy">
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-[#B52C62]">1.Introduction</h2>
         <p>

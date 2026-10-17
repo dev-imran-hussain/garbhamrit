@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsAndConditionsPage() {
   return (
-    <LegalPageLayout title="नियम एवं शर्तें (Terms & Conditions)">
+    <LegalPageLayout title="Terms & Conditions">
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-[#B52C62]">1.General Terms</h2>
         <p>

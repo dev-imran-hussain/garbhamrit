@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ShippingPolicyPage() {
   return (
-    <LegalPageLayout title="शिपिंग एवं डिलीवरी नीति (Shipping & Delivery Policy)">
+    <LegalPageLayout title="Shipping & Delivery Policy">
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-[#B52C62]">1.Delivery Coverage</h2>
         <p>

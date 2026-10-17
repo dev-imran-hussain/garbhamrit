@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function DisclaimerPage() {
   return (
-    <LegalPageLayout title="वैधानिक अस्वीकरण (Disclaimer)">
+    <LegalPageLayout title="Disclaimer">
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-[#B52C62]">1.General Information</h2>
         <p>
