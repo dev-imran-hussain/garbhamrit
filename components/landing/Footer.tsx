@@ -113,15 +113,6 @@ export const Footer: React.FC = () => {
                   Shipping Policy
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/return-policy"
-                  onClick={() => trackNavigationClick("/return-policy", "footer")}
-                  className="hover:text-white transition-colors"
-                >
-                  Return Policy
-                </Link>
-              </li>
             </ul>
           </div>
 

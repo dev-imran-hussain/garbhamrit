@@ -73,3 +73,4 @@ export const LegalPageLayout: React.FC<LegalPageLayoutProps> = ({
     </div>
   );
 };
+
