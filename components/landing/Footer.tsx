@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { siteConfig } from "@/data/product";
 import { Phone, Mail, Clock, MapPin, Heart } from "lucide-react";
 import { trackCallClick, trackNavigationClick } from "@/lib/analytics";
@@ -77,29 +78,49 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
-                <span className="hover:text-white cursor-pointer transition-colors">
+                <Link
+                  href="/privacy-policy"
+                  onClick={() => trackNavigationClick("/privacy-policy", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Privacy Policy
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-white cursor-pointer transition-colors">
+                <Link
+                  href="/terms-and-conditions"
+                  onClick={() => trackNavigationClick("/terms-and-conditions", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Terms & Conditions
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-white cursor-pointer transition-colors">
+                <Link
+                  href="/disclaimer"
+                  onClick={() => trackNavigationClick("/disclaimer", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Disclaimer
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-white cursor-pointer transition-colors">
+                <Link
+                  href="/shipping-policy"
+                  onClick={() => trackNavigationClick("/shipping-policy", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Shipping Policy
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-white cursor-pointer transition-colors">
+                <Link
+                  href="/return-policy"
+                  onClick={() => trackNavigationClick("/return-policy", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Return Policy
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
