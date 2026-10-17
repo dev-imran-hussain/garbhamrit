@@ -7,7 +7,6 @@ import { HowToUse } from "@/components/landing/HowToUse";
 import { KeyFeatures } from "@/components/landing/KeyFeatures";
 import { WhyChooseUs } from "@/components/landing/WhyChooseUs";
 import { Ingredients } from "@/components/landing/Ingredients";
-import { ProductDetails } from "@/components/landing/ProductDetails";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { Footer } from "@/components/landing/Footer";
 import { StickyMobileCTA } from "@/components/ui/StickyMobileCTA";
@@ -90,12 +89,7 @@ export default function Home() {
           <Ingredients />
         </div>
 
-        {/* 10. Product Information */}
-        <div id="details" className="content-visibility-auto">
-          <ProductDetails />
-        </div>
-
-        {/* 11. Final CTA */}
+        {/* 10. Final CTA */}
         <div className="content-visibility-auto">
           <FinalCTA />
         </div>

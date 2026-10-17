@@ -48,11 +48,6 @@ export const Footer: React.FC = () => {
                   Reviews
                 </a>
               </li>
-              <li>
-                <a href="#details" className="hover:text-white transition-colors">
-                  Details
-                </a>
-              </li>
             </ul>
           </div>
 
