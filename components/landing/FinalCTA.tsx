@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { siteConfig } from "@/data/product";
+import { siteConfig, getWhatsAppLink } from "@/data/product";
 import { Sparkles, ShieldCheck } from "lucide-react";
 import { getOptimizedImage } from "@/lib/images";
 
@@ -54,7 +54,7 @@ export const FinalCTA: React.FC = () => {
             label="Order On WhatsApp"
             variant="whatsapp"
             icon="whatsapp"
-            href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20का%20ऑर्डर%20देना%20है`}
+            href={getWhatsAppLink("नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) का ऑर्डर बुक करना है। कृपया आज का डिस्काउंट ऑफर और Cash on Delivery (COD) की जानकारी भेजें।")}
             size="lg"
             className="w-full min-w-[260px] shadow-2xl sm:w-auto"
           />

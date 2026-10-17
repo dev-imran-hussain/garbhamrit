@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { siteConfig } from "@/data/product";
+import { siteConfig, getWhatsAppLink } from "@/data/product";
 import { getOptimizedImage } from "@/lib/images";
 
 export const HeroSection: React.FC = () => {
@@ -101,7 +101,7 @@ export const HeroSection: React.FC = () => {
                 label="WHATSAPP"
                 variant="whatsapp"
                 icon="whatsapp"
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20के%20बारे%20में%20जानकारी%20चाहिए`}
+                href={getWhatsAppLink("नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) के बारे में जानकारी चाहिए और ऑर्डर बुक करना है। कृपया आज का स्पेशल डिस्काउंट ऑफर बताएं।")}
                 size="lg"
                 className="shadow-xl"
               />

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
-import { siteConfig } from "@/data/product";
+import { siteConfig, getWhatsAppLink } from "@/data/product";
 
 export const StickyMobileCTA: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -38,7 +38,7 @@ export const StickyMobileCTA: React.FC = () => {
       </a>
 
       <a
-        href={`https://wa.me/${siteConfig.whatsappNumber}?text=नमस्ते,%20मुझे%20गर्भ%20अमृत%20के%20बारे%20में%20जानकारी%20चाहिए`}
+        href={getWhatsAppLink("नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) के बारे में जानकारी चाहिए और ऑर्डर करना है। कृपया आज का डिस्काउंट ऑफर बताएं।")}
         aria-label="WhatsApp"
         className="flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-md active:scale-95 transition-transform shrink-0"
       >

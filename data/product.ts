@@ -21,6 +21,14 @@ export const siteConfig = {
   address: "Barkheda Purvaiya, Bagli, Dewas, Madhya Pradesh – 455223",
 };
 
+export function getWhatsAppLink(message?: string): string {
+  const defaultMsg =
+    "नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) के बारे में जानकारी चाहिए और ऑर्डर करना है। कृपया आज का डिस्काउंट ऑफर और डिलीवरी डिटेल्स बताएं।";
+  return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
+    message || defaultMsg
+  )}`;
+}
+
 export const product: ProductDetails = {
   name: "गर्भ अमृत™ Garbh Amrit",
 
