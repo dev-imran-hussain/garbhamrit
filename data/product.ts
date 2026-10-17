@@ -9,16 +9,16 @@ export const siteConfig = {
   description:
     "गर्भ अमृत™ 23+ आयुर्वेदिक जड़ी-बूटियों से तैयार हर्बल फॉर्मूला है, जिसे महिलाओं के दैनिक स्वास्थ्य और पोषण को ध्यान में रखकर बनाया गया है।",
 
-  phone: "+919876543210",
-  phoneDisplay: "+91 98765 43210",
+  phone: "+919111077798",
+  phoneDisplay: "+91 91110 77798",
 
-  whatsappNumber: "+919876543210",
+  whatsappNumber: "919111077798",
 
-  email: "support@garbhamrit.in",
+  email: "support@garbhamrit.com",
 
   supportTiming: "Monday - Saturday: 9:00 AM - 7:00 PM",
 
-  address: "vijaay nagar , Indore , Madhya Pradesh , 452010",
+  address: "Barkheda Purvaiya, Bagli, Dewas, Madhya Pradesh – 455223",
 };
 
 export const product: ProductDetails = {
@@ -65,9 +65,9 @@ export const product: ProductDetails = {
     "Daily Women's Wellness & Nutrition के लिए",
   ],
 
-  helplineNumber: "+919876543210",
+  helplineNumber: "+919111077798",
 
-  helplineDisplay: "+91 98765 43210",
+  helplineDisplay: "+91 91110 77798",
 
-  whatsappNumber: "+919876543210",
+  whatsappNumber: "919111077798",
 };
