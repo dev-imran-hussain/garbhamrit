@@ -1,12 +1,16 @@
+"use client";
+
 import React from "react";
 import { Phone } from "lucide-react";
 import { siteConfig } from "@/data/product";
+import { trackCallClick } from "@/lib/analytics";
 
 export const TopCallBar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-[#E83D82] text-white shadow-md">
       <a
         href={`tel:${siteConfig.phone}`}
+        onClick={() => trackCallClick("top_call_bar")}
         className="
           flex items-center justify-center
           gap-2.5 sm:gap-3

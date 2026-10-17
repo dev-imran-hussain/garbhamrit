@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig } from "@/data/product";
+import { trackCallClick, trackWhatsAppClick, trackOrderClick } from "@/lib/analytics";
 
 interface CTAButtonProps {
   label?: string;
@@ -11,6 +14,8 @@ interface CTAButtonProps {
   icon?: "phone" | "whatsapp" | "none";
   href?: string;
   className?: string;
+  trackingLocation?: string;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 export const CTAButton: React.FC<CTAButtonProps> = ({
@@ -21,7 +26,25 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
   icon = "phone",
   href = `tel:${siteConfig.phone}`,
   className = "",
+  trackingLocation,
+  onClick,
 }) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const loc = trackingLocation || "cta_button";
+    if (variant === "whatsapp" || icon === "whatsapp") {
+      trackWhatsAppClick(loc, { button_label: label });
+    } else {
+      trackCallClick(loc, { button_label: label });
+      if (label.toLowerCase().includes("order")) {
+        trackOrderClick(loc, { button_label: label });
+      }
+    }
+
+    if (onClick) {
+      onClick(e);
+    }
+  };
+
   const baseStyles =
     "inline-flex flex-col items-center justify-center font-medium transition-all duration-200 active:scale-95 text-center rounded-full shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2";
 
@@ -43,6 +66,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
   return (
     <a
       href={href}
+      onClick={handleClick}
       className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
     >
       <div className="flex items-center gap-2.5 sm:gap-3 font-bold tracking-wide">

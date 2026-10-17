@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { siteConfig } from "@/data/product";
 import { Phone, Mail, Clock, MapPin, Heart } from "lucide-react";
+import { trackCallClick, trackNavigationClick } from "@/lib/analytics";
 
 export const Footer: React.FC = () => {
   return (
@@ -29,22 +32,38 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-3 text-[#FFE4ED]/85 text-sm lg:text-base">
               <li>
-                <a href="#hero" className="hover:text-white transition-colors">
+                <a
+                  href="#hero"
+                  onClick={() => trackNavigationClick("#hero", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#ingredients" className="hover:text-white transition-colors">
+                <a
+                  href="#ingredients"
+                  onClick={() => trackNavigationClick("#ingredients", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Ingredients
                 </a>
               </li>
               <li>
-                <a href="#how-to-use" className="hover:text-white transition-colors">
+                <a
+                  href="#how-to-use"
+                  onClick={() => trackNavigationClick("#how-to-use", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   How to Use
                 </a>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-white transition-colors">
+                <a
+                  href="#reviews"
+                  onClick={() => trackNavigationClick("#reviews", "footer")}
+                  className="hover:text-white transition-colors"
+                >
                   Reviews
                 </a>
               </li>
@@ -95,6 +114,7 @@ export const Footer: React.FC = () => {
                 <Phone className="w-5 h-5 text-[#E83D82] shrink-0 mt-0.5" />
                 <a
                   href={`tel:${siteConfig.phone}`}
+                  onClick={() => trackCallClick("footer")}
                   className="hover:text-white font-bold text-base lg:text-lg"
                 >
                   {siteConfig.phoneDisplay}

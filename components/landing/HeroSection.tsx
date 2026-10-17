@@ -34,6 +34,7 @@ export const HeroSection: React.FC = () => {
               label="CALL NOW"
               size="lg"
               className="w-full max-w-[340px] shadow-xl text-lg font-bold tracking-wider"
+              trackingLocation="hero_section_mobile"
             />
           </div>
         </div>
@@ -96,6 +97,7 @@ export const HeroSection: React.FC = () => {
                 label="CALL NOW"
                 size="lg"
                 className="min-w-[240px] shadow-xl"
+                trackingLocation="hero_section_desktop"
               />
               <CTAButton
                 label="WHATSAPP"
@@ -104,6 +106,7 @@ export const HeroSection: React.FC = () => {
                 href={getWhatsAppLink("नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) के बारे में जानकारी चाहिए और ऑर्डर बुक करना है। कृपया आज का स्पेशल डिस्काउंट ऑफर बताएं।")}
                 size="lg"
                 className="shadow-xl"
+                trackingLocation="hero_section_desktop"
               />
             </div>
           </div>

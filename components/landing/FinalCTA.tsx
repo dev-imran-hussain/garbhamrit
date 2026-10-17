@@ -48,6 +48,7 @@ export const FinalCTA: React.FC = () => {
             label="Order Now"
             size="lg"
             className="w-full min-w-[260px] shadow-2xl sm:w-auto"
+            trackingLocation="final_cta"
           />
 
           <CTAButton
@@ -57,6 +58,7 @@ export const FinalCTA: React.FC = () => {
             href={getWhatsAppLink("नमस्ते! मुझे गर्भ अमृत™ (Garbh Amrit) का ऑर्डर बुक करना है। कृपया आज का डिस्काउंट ऑफर और Cash on Delivery (COD) की जानकारी भेजें।")}
             size="lg"
             className="w-full min-w-[260px] shadow-2xl sm:w-auto"
+            trackingLocation="final_cta"
           />
 
         </div>
