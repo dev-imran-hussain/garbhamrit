@@ -1,6 +1,7 @@
 import { TopCallBar } from "@/components/landing/TopCallBar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { ProductIntro } from "@/components/landing/ProductIntro";
+import { KeyBenefits } from "@/components/landing/KeyBenefits";
 import { SpecialApproach } from "@/components/landing/SpecialApproach";
 import { CustomerReviews } from "@/components/landing/CustomerReviews";
 import { HowToUse } from "@/components/landing/HowToUse";
@@ -60,6 +61,11 @@ export default function Home() {
 
         {/* 3. What Is The Product? */}
         <ProductIntro />
+
+        {/* 3.1 Key Benefits (प्रमुख फायदे) */}
+        <div id="benefits" className="content-visibility-auto">
+          <KeyBenefits />
+        </div>
 
         {/* 4. Special Approach / Perspective */}
         <SpecialApproach />
