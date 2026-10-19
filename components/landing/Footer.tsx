@@ -60,13 +60,13 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#reviews"
-                  onClick={() => trackNavigationClick("#reviews", "footer")}
+                <Link
+                  href="/reviews"
+                  onClick={() => trackNavigationClick("/reviews", "footer")}
                   className="hover:text-white transition-colors"
                 >
-                  Reviews
-                </a>
+                  Reviews 52+ Mother experience
+                </Link>
               </li>
             </ul>
           </div>
@@ -147,18 +147,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-
-        {/* Disclaimer Notice */}
-        <div className="py-6 text-xs lg:text-sm text-[#FFE4ED]/75 font-medium leading-relaxed border-b border-[#795968]/30">
-          <p>
-            <strong className="font-bold text-white">Disclaimer : </strong> यह उत्पाद किसी भी
-            रोग के निदान, उपचार या रोकथाम का दावा नहीं करता है। यह एक शास्त्रीय
-            आयुर्वेदिक स्वास्थ्य पूरक है। व्यक्तिगत परिणाम भिन्न हो सकते हैं।
-            गर्भावस्था या किसी गंभीर चिकित्सकीय स्थिति के दौरान अपने चिकित्सक की
-            सलाह अवश्य लें।
-          </p>
-        </div>
-
         {/* Bottom Copyright */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-[#FFE4ED]/70 gap-3">
           <p>© {new Date().getFullYear()} गर्भ अमृत™. सर्वाधिकार सुरक्षित।</p>

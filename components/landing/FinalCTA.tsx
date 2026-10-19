@@ -75,7 +75,7 @@ export const FinalCTA: React.FC = () => {
 
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-5 w-5 text-[#10B981]" />
-            <span>Cash on Delivery</span>
+            <span>60+ Year Of Trust</span>
           </div>
 
           <span className="hidden text-[#D9A8BA] sm:block">•</span>
