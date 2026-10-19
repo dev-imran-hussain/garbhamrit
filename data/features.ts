@@ -1,3 +1,4 @@
+/* ya ha tak code me sab thik he data end all */
 export const keyFeatures = [
   {
     id: "kf-1",
