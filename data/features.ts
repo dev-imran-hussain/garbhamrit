@@ -64,26 +64,32 @@ export const usageSteps = [
     alt: "नियमित रात का सेवन (Daily habit moon)",
   },
 ];
-export const comparisonPoints = [
+export const treatmentComparison = [
   {
-    title: "Herbal Blend",
-    us: "23+ Ayurvedic herbs का balanced blend",
-    others: "Ingredients product के अनुसार अलग-अलग",
+    type: "अंग्रेज़ी दवाएं (Allopathy)",
+    cost: "₹30,000 से ₹80,000+",
+    costSub: "(जांच, इंजेक्शन्स व गोलियां)",
+    riskRate: "मध्यम, दवा बंद करते ही समस्या दोबारा शुरू हो जाती है ।",
+    sideEffects: "वजन बढ़ना, मूड स्विंग्स, लिवर व हार्मोनल असंतुलन ।",
+    isFeatured: false,
   },
   {
-    title: "Natural Formula",
-    us: "Natural herbs पर आधारित formulation",
-    others: "Synthetic ingredients हो सकते हैं",
+    type: "IVF (टेस्ट ट्यूब बेबी)",
+    cost: "₹1,50,000 से ₹4,00,000+",
+    costSub: "(प्रति अटेम्प्ट)",
+    riskRate: "केवल 30% - 40% सफलता । पहली बार में अक्सर IVF फेल हो जाता है ।",
+    sideEffects: "अत्यधिक दर्दनाक इंजेक्शन, मानसिक तनाव व शारीरिक कमजोरी ।",
+    isFeatured: false,
   },
   {
-    title: "Quality",
-    us: "GMP & AYUSH standards के अनुसार निर्मित",
-    others: "Quality standards अलग-अलग हो सकते हैं",
-  },
-  {
-    title: "Daily Use",
-    us: "दूध या गुनगुने पानी के साथ easy to use",
-    others: "Usage method product के अनुसार अलग",
+    type: "गर्भ अमृत (आयुर्वेदिक)",
+    cost: "अत्यंत किफ़ायती उपचार",
+    costSub: "",
+    riskRate: "उच्च प्राकृतिक सफलता दर",
+    riskRateSub: "(शरीर को अंदर से स्वस्थ बनाकर)",
+    sideEffects: "0% साइड इफेक्ट",
+    sideEffectsSub: "(100% प्राकृतिक जड़ी-बूटियां)",
+    isFeatured: true,
   },
 ];
 

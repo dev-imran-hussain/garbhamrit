@@ -1,52 +1,99 @@
 import React from "react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { comparisonPoints } from "@/data/features";
-import { Check, X } from "lucide-react";
+import { treatmentComparison } from "@/data/features";
 
 export const WhyChooseUs: React.FC = () => {
   return (
-    <section className="py-14 md:py-20 lg:py-24 bg-[#FFF0F5]/50 border-b border-[#F3BFD2]/40">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Comparison & Superiority"
-          title="अन्य विकल्पों की तुलना में गर्भ अमृत क्यों?"
-          subtitle="समझिए कि क्यों आयुर्वेदिक गर्भ अमृत आपके मातृत्व के सफर का सबसे भरोसेमंद साथी है।"
-        />
-
-        <div className="bg-white border-2 border-[#F3BFD2] rounded-3xl overflow-hidden shadow-lg">
-          {/* Table Header */}
-          <div className="grid grid-cols-12 bg-[#FFF0F5] border-b-2 border-[#F3BFD2] p-4 sm:p-6 text-sm sm:text-base lg:text-lg font-bold text-[#4A2635]">
-            <div className="col-span-5 sm:col-span-4">Features</div>
-            <div className="col-span-4 sm:col-span-4 text-[#B52C62] flex items-center gap-1.5 font-extrabold">
-              गर्भ अमृत™
-            </div>
-            <div className="col-span-3 sm:col-span-4 text-[#795968]">
-              Other Products
-            </div>
-          </div>
-
-          {/* Table Rows */}
-          <div className="divide-y divide-[#FFF0F5]">
-            {comparisonPoints.map((item, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-12 p-4 sm:p-6 text-xs sm:text-base lg:text-lg items-center hover:bg-[#FFF8FA] transition-colors"
-              >
-                <div className="col-span-5 sm:col-span-4 font-extrabold text-[#4A2635] pr-3">
-                  {item.title}
-                </div>
-                <div className="col-span-4 sm:col-span-4 text-[#B52C62] font-bold flex items-start gap-2 pr-3">
-                  <Check className="w-5 h-5 lg:w-6 lg:h-6 text-[#10B981] shrink-0 mt-0.5" />
-                  <span>{item.us}</span>
-                </div>
-                <div className="col-span-3 sm:col-span-4 text-[#6C4D5C] font-medium sm:font-semibold flex items-start gap-2">
-                  <X className="w-5 h-5 lg:w-6 lg:h-6 text-[#EF4444] shrink-0 mt-0.5" />
-                  <span>{item.others}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+    <section className="py-12 sm:py-16 md:py-20 bg-[#FFF9FB] border-b border-[#F3BFD2]/40">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Heading matching reference image */}
+        <div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#8B1E3F] tracking-tight">
+            इलाज की तुलना: अंग्रेज़ी दवाएं, IVF बनाम गर्भ अमृत
+          </h2>
+          {/* Subtle Pink Divider Line */}
+          <div className="w-full h-[2px] bg-[#F7C6D7] mt-3.5 sm:mt-4 mb-4 sm:mb-5" />
+          <p className="text-sm sm:text-base md:text-lg text-[#4A2635] font-semibold leading-relaxed">
+            संतान प्राप्ति के लिए लोग लाखों रुपये पानी की तरह बहा देते हैं, फिर भी सफलता की गारंटी नहीं मिलती । आइए समझें असली फर्क:
+          </p>
         </div>
+
+        {/* Emotion / Quote Callout Box */}
+        <div className="my-6 sm:my-8 p-4 sm:p-6 bg-[#FFF0F5] border-l-[5px] border-[#8B1E3F] rounded-r-2xl shadow-xs">
+          <p className="font-bold text-[#601229] text-sm sm:text-base md:text-lg leading-relaxed">
+            &ldquo;शादी के सालों बाद भी गोद सूनी रहना किसी भी महिला के लिए सबसे बड़ा दुख होता है । जब अंग्रेज़ी दवाइयां और महंगे ट्रीटमेंट भी जवाब दे देते हैं, तब गर्भ अमृत का प्राकृतिक और असरदार आयुर्वेदिक उपचार आपके शरीर को गर्भधारण के लिए तैयार करता है ।&rdquo;
+          </p>
+        </div>
+
+        {/* Comparison Table */}
+        <div className="overflow-x-auto rounded-2xl border border-[#F7C6D7] shadow-sm bg-white">
+          <table className="w-full min-w-[720px] text-left border-collapse">
+            <thead>
+              <tr className="bg-[#8B1E3F] text-white text-sm sm:text-base font-bold">
+                <th className="py-3.5 sm:py-4 px-4 sm:px-6">उपचार का प्रकार</th>
+                <th className="py-3.5 sm:py-4 px-4 sm:px-6">अनुमानित खर्चे (Cost)</th>
+                <th className="py-3.5 sm:py-4 px-4 sm:px-6">सफलता की दर व जोखिम</th>
+                <th className="py-3.5 sm:py-4 px-4 sm:px-6">शरीर पर दुष्प्रभाव</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#F7C6D7] text-xs sm:text-sm md:text-base">
+              {treatmentComparison.map((row, idx) => (
+                <tr
+                  key={idx}
+                  className={
+                    row.isFeatured
+                      ? "bg-[#FFF0F5] font-semibold text-[#8B1E3F]"
+                      : "bg-white text-[#3C4A5E] hover:bg-[#FFF9FB] transition-colors"
+                  }
+                >
+                  {/* Col 1: Type */}
+                  <td className="py-4 sm:py-5 px-4 sm:px-6 font-bold align-top">
+                    <span className={row.isFeatured ? "text-[#8B1E3F] font-extrabold text-sm sm:text-base md:text-lg" : "text-[#1E293B]"}>
+                      {row.type}
+                    </span>
+                  </td>
+
+                  {/* Col 2: Cost */}
+                  <td className="py-4 sm:py-5 px-4 sm:px-6 font-bold align-top">
+                    <div className={row.isFeatured ? "text-[#8B1E3F] font-extrabold" : "text-[#1E293B]"}>
+                      {row.cost}
+                    </div>
+                    {row.costSub && (
+                      <div className="text-xs text-[#64748B] font-normal mt-0.5">
+                        {row.costSub}
+                      </div>
+                    )}
+                  </td>
+
+                  {/* Col 3: Success Rate & Risk */}
+                  <td className="py-4 sm:py-5 px-4 sm:px-6 align-top leading-relaxed">
+                    <div className={row.isFeatured ? "font-bold text-[#8B1E3F]" : ""}>
+                      {row.riskRate}
+                    </div>
+                    {row.riskRateSub && (
+                      <div className="text-xs font-bold text-[#8B1E3F] mt-0.5">
+                        {row.riskRateSub}
+                      </div>
+                    )}
+                  </td>
+
+                  {/* Col 4: Side Effects */}
+                  <td className="py-4 sm:py-5 px-4 sm:px-6 align-top leading-relaxed">
+                    <div className={row.isFeatured ? "font-bold text-[#8B1E3F]" : ""}>
+                      {row.sideEffects}
+                    </div>
+                    {row.sideEffectsSub && (
+                      <div className="text-xs font-bold text-[#8B1E3F] mt-0.5">
+                        {row.sideEffectsSub}
+                      </div>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </section>
   );
