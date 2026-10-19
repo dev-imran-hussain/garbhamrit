@@ -1,5 +1,6 @@
 import React from "react";
 import { fourReasons } from "@/data/features";
+import { SectionHeading } from "../ui/SectionHeading";
 
 export const FourReasons: React.FC = () => {
   return (
@@ -7,12 +8,11 @@ export const FourReasons: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading matching reference image */}
-        <div className="mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#8B1E3F] tracking-tight">
-            गर्भ अमृत चुनने के 4 मुख्य कारण
-          </h2>
-          {/* Subtle Pink Divider Line */}
-          <div className="w-full h-[2px] bg-[#F7C6D7] mt-3.5 sm:mt-4" />
+         <div className="text-center mb-8 sm:mb-12">
+          <SectionHeading
+            badge="Reason For Choose"
+            title="गर्भ अमृत चुनने के 4 मुख्य कारण"
+          />
         </div>
 
         {/* 2-Column Responsive Card Grid */}
@@ -41,3 +41,4 @@ export const FourReasons: React.FC = () => {
     </section>
   );
 };
+

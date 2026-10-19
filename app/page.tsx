@@ -6,6 +6,7 @@ import { SpecialApproach } from "@/components/landing/SpecialApproach";
 import { CustomerReviews } from "@/components/landing/CustomerReviews";
 import { HowToUse } from "@/components/landing/HowToUse";
 import { KeyFeatures } from "@/components/landing/KeyFeatures";
+import { FourReasons } from "@/components/landing/FourReasons";
 import { WhyChooseUs } from "@/components/landing/WhyChooseUs";
 import { Ingredients } from "@/components/landing/Ingredients";
 import { FinalCTA } from "@/components/landing/FinalCTA";
@@ -85,7 +86,12 @@ export default function Home() {
           <KeyFeatures />
         </div>
 
-        {/* 8. Why Choose This Product? */}
+        {/* 8. 4 Main Reasons To Choose Garbh Amrit */}
+        <div id="reasons" className="content-visibility-auto">
+          <FourReasons />
+        </div>
+
+        {/* 8.1 Why Choose This Product? (Treatment Comparison) */}
         <div className="content-visibility-auto">
           <WhyChooseUs />
         </div>
