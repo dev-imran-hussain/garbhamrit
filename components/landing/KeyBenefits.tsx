@@ -1,5 +1,6 @@
 import React from "react";
 import { keyBenefits } from "@/data/features";
+import { SectionHeading } from "../ui/SectionHeading";
 
 export const KeyBenefits: React.FC = () => {
   return (
@@ -7,13 +8,13 @@ export const KeyBenefits: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading matching reference image */}
-        <div className="mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#8B1E3F] tracking-tight">
-            गर्भ अमृत के प्रमुख फायदे (Key Benefits)
-          </h2>
-          {/* Subtle Pink Divider Line */}
-          <div className="w-full h-[2px] bg-[#F7C6D7] mt-3.5 sm:mt-4" />
-        </div>
+
+        <div className="text-center mb-8 sm:mb-12">
+              <SectionHeading
+                  badge="Key Benefits"
+                  title=" गर्भ अमृत के प्रमुख फायदे"
+                />
+        </div> 
 
         {/* 2-Column Responsive Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
