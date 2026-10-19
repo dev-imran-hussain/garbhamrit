@@ -1,5 +1,6 @@
 import React from "react";
 import { treatmentComparison } from "@/data/features";
+import { SectionHeading } from "../ui/SectionHeading";
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -7,15 +8,25 @@ export const WhyChooseUs: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading matching reference image */}
-        <div>
+       
+       {/* <div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#8B1E3F] tracking-tight">
             इलाज की तुलना: अंग्रेज़ी दवाएं, IVF बनाम गर्भ अमृत
           </h2>
-          {/* Subtle Pink Divider Line */}
+          {/* Subtle Pink Divider Line 
           <div className="w-full h-[2px] bg-[#F7C6D7] mt-3.5 sm:mt-4 mb-4 sm:mb-5" />
           <p className="text-sm sm:text-base md:text-lg text-[#4A2635] font-semibold leading-relaxed">
             संतान प्राप्ति के लिए लोग लाखों रुपये पानी की तरह बहा देते हैं, फिर भी सफलता की गारंटी नहीं मिलती । आइए समझें असली फर्क:
           </p>
+        </div> */}
+
+          <div className="text-center mb-8 sm:mb-12">
+          <SectionHeading
+            badge="Comparison Of Cure"
+            title="इलाज की तुलना"
+            subtitle="संतान प्राप्ति के लिए लोग लाखों रुपये पानी की तरह बहा देते हैं, फिर भी सफलता की गारंटी नहीं मिलती । आइए समझें असली फर्क:
+"
+          />
         </div>
 
         {/* Emotion / Quote Callout Box */}

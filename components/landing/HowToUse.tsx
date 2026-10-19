@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { AlertCircle } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { usageSteps } from "@/data/features";
 import { getOptimizedImage } from "@/lib/images";
@@ -11,7 +12,7 @@ export const HowToUse: React.FC = () => {
         {/* ================= HEADER ================= */}
         <div className="text-center mb-8 sm:mb-12">
           <SectionHeading
-            badge="उपयोग विधि"
+            badge="How To Use"
             title="कैसे करें सेवन ?"
             subtitle="सरल और स्वाभाविक 3 चरण, जिसे आप अपनी दैनिक दिनचर्या में आसानी से शामिल कर सकती हैं।"
           />
@@ -139,6 +140,27 @@ export const HowToUse: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* ================= PRECAUTIONS / परहेज ================= */}
+        <div className="mt-8 sm:mt-12 max-w-4xl mx-auto">
+          <div className="bg-white border-2 border-[#F3BFD2] rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#FFF0F5] border border-[#F3BFD2] flex items-center justify-center shrink-0 text-[#E83D82]">
+              <AlertCircle className="w-6 h-6 sm:w-7 sm:h-7" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="px-2.5 py-0.5 rounded-md bg-[#E83D82] text-white text-xs sm:text-sm font-extrabold tracking-wide uppercase">
+                  विशेष परहेज
+                </span>
+              </div>
+              <p className="text-sm sm:text-base lg:text-lg font-bold text-[#4A2635] leading-relaxed">
+                <span className="text-[#8B1E3F] font-black">परहेज: </span>
+                खट्टा, अत्यधिक तीखा, तला-भुना, बासी भोजन और चाय/कॉफी का अत्यधिक सेवन न करें।
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
